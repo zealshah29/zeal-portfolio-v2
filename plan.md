@@ -1,4 +1,4 @@
-Making use of powerful AI tool (ChatGPT ofcourse) to develop my well structured and responsive portfolio website. This is the first version of plan suggested by AI. I will keep ammending it as I continue my journey. 
+Making use of powerful AI tool (ChatGPT ofcourse) to plan the development of my well structured and responsive portfolio website. This is the first version of plan suggested by AI. I will keep ammending it as I continue my journey. 
 
 ### Project Plan for Developing a Portfolio Website
 
