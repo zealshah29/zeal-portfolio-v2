@@ -4,7 +4,7 @@ import GroupComponent2 from "../components/GroupComponent2";
 import FrameComponent4 from "../components/FrameComponent4";
 import GroupComponent3 from "../components/GroupComponent3";
 import FrameComponent2 from "../components/FrameComponent2";
-import FrameComponent1 from "../components/FrameComponent";
+import FrameComponent1 from "../components/FrameComponent1";
 import Gdsc from "../components/Gdsc";
 
 const Work: FunctionComponent = () => {

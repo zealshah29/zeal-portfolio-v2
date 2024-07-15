@@ -1,10 +1,49 @@
-import { FunctionComponent } from "react";
+import { FunctionComponent, useCallback } from "react";
 import NavbarHome from "../components/NavbarHome";
 
 const Home: FunctionComponent = () => {
+  const onRESUMETextClick = useCallback(() => {
+    window.open(
+      "https://drive.google.com/file/d/1QKfTg4IxINo5708_-KW1kGMgXLrsZtfZ/view?usp=sharing"
+    );
+  }, []);
+
+  const onLinkedInIconClick = useCallback(() => {
+    window.open("https://www.linkedin.com/in/zeal-shah-60214b121/");
+  }, []);
+
+  const onGitHubIconClick = useCallback(() => {
+    window.open("https://github.com/zealshah29");
+  }, []);
+
   return (
-    <div className="w-full relative bg-white overflow-hidden flex flex-row flex-wrap items-center justify-center gap-[0px_410px] lg:h-auto sm:flex-row">
+    <div className="w-full relative bg-white overflow-hidden flex flex-row flex-wrap items-center justify-center gap-[0px_410px] text-left text-mini text-blue font-nunito lg:h-auto sm:flex-row">
       <NavbarHome />
+      <div className="h-12 w-[1550px] bg-white box-border flex flex-row items-center justify-between py-3.5 px-10 border-[0.5px] border-solid border-gainsboro-300 sm:flex">
+        <div className="w-[110px] relative h-[31px]">
+          <div className="absolute top-[0px] left-[0px] bg-gainsboro-200 box-border w-[110px] h-[31px] border-[1px] border-solid border-blue" />
+          <div
+            className="absolute top-[5.5px] left-[21px] tracking-[0.1em] cursor-pointer"
+            onClick={onRESUMETextClick}
+          >
+            RESUME
+          </div>
+        </div>
+        <div className="flex flex-row items-center justify-start gap-[20px]">
+          <img
+            className="w-[25px] relative h-[25px] object-cover cursor-pointer"
+            alt=""
+            src="/linkedin@2x.png"
+            onClick={onLinkedInIconClick}
+          />
+          <img
+            className="w-[25px] relative h-[25px] object-cover cursor-pointer"
+            alt=""
+            src="/github@2x.png"
+            onClick={onGitHubIconClick}
+          />
+        </div>
+      </div>
       <div
         className="w-[1512px] relative [background:linear-gradient(90deg,_rgba(66,_133,_244,_0.9),_rgba(150,_100,_148,_0.9)_21.18%,_rgba(234,_67,_53,_0.9)_41.46%,_rgba(243,_128,_29,_0.9)_58.96%,_rgba(251,_188,_5,_0.9)_79.65%,_rgba(52,_168,_83,_0.9))] h-[41px]"
         id="decorative"
