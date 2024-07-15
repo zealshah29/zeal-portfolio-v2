@@ -1,7 +1,11 @@
 import { FunctionComponent, useCallback } from "react";
 import NavbarWork from "../components/NavbarWork";
 import GroupComponent2 from "../components/GroupComponent2";
+import FrameComponent4 from "../components/FrameComponent4";
 import GroupComponent3 from "../components/GroupComponent3";
+import FrameComponent2 from "../components/FrameComponent2";
+import FrameComponent1 from "../components/FrameComponent";
+import Gdsc from "../components/Gdsc";
 
 const Work: FunctionComponent = () => {
   const onRESUMETextClick = useCallback(() => {
@@ -11,7 +15,7 @@ const Work: FunctionComponent = () => {
   }, []);
 
   const onLinkedInIconClick = useCallback(() => {
-    window.open("www.linkedin.com/in/zeal-shah-60214b121");
+    window.open("https://www.linkedin.com/in/zeal-shah-60214b121/");
   }, []);
 
   const onGitHubIconClick = useCallback(() => {
@@ -19,26 +23,29 @@ const Work: FunctionComponent = () => {
   }, []);
 
   return (
-    <div className="w-full relative bg-white overflow-hidden flex flex-col items-start justify-start text-left text-mini text-black font-nunito">
+    <div className="w-full relative bg-white overflow-hidden flex flex-col items-start justify-start text-left text-mini text-blue font-nunito">
       <NavbarWork />
       <div className="self-stretch h-12 bg-white box-border flex flex-row items-center justify-between py-3.5 px-10 border-[0.5px] border-solid border-gainsboro-300 sm:flex">
-        <div
-          className="relative tracking-[0.1em] cursor-pointer"
-          onClick={onRESUMETextClick}
-        >
-          RESUME
+        <div className="w-[110px] relative h-[31px]">
+          <div className="absolute top-[0px] left-[0px] bg-gainsboro-200 box-border w-[110px] h-[31px] border-[1px] border-solid border-blue" />
+          <div
+            className="absolute top-[5.5px] left-[21px] tracking-[0.1em] cursor-pointer"
+            onClick={onRESUMETextClick}
+          >
+            RESUME
+          </div>
         </div>
         <div className="flex flex-row items-center justify-start gap-[20px]">
           <img
             className="w-[25px] relative h-[25px] object-cover cursor-pointer"
             alt=""
-            src="/linkedin1@2x.png"
+            src="/linkedin@2x.png"
             onClick={onLinkedInIconClick}
           />
           <img
             className="w-[25px] relative h-[25px] object-cover cursor-pointer"
             alt=""
-            src="/github1@2x.png"
+            src="/github@2x.png"
             onClick={onGitHubIconClick}
           />
         </div>
@@ -50,207 +57,53 @@ const Work: FunctionComponent = () => {
         <b className="self-stretch relative tracking-[0.02em] leading-[50px] lg:text-11xl md:text-6xl sm:text-xl sm:leading-[10px]">
           EXPERIENCE
         </b>
-        <div className="self-stretch flex flex-row flex-wrap items-center justify-start py-10 px-[30px] gap-[20px] text-left text-lg text-black font-nunito">
+        <div className="self-stretch flex flex-row flex-wrap items-center justify-start py-10 px-[30px] gap-[20px]">
           <GroupComponent2 />
-          <div className="flex-1 shadow-[0px_2px_25px_rgba(0,_0,_0,_0.05)] bg-white flex flex-col items-start justify-center py-[30px] px-10 gap-[20px] border-[0.1px] border-solid border-gray-400 lg:w-[550px] md:w-[450px] sm:w-[300px]">
-            <div className="self-stretch relative text-sm tracking-[0.1em] text-gray-500 flex items-center h-[52px] shrink-0 lg:text-smi md:text-2xs sm:text-3xs">
-              January, 2024 - May, 2024
-            </div>
-            <b className="self-stretch relative text-5xl tracking-[0.1em] leading-[30px] font-nunito-sans lg:text-3xl md:text-xl sm:text-lg">{`Research Intern | SVNIT, Surat `}</b>
-            <div className="self-stretch relative tracking-[0.1em] leading-[20px] lg:text-mini md:text-xs">
-              <span>{`I integrated a PULP_RISCV hardware accelerator with the PULPissimo system for computer vision applications on FPGA platform. The results were impressive, with the hardware accelerator achieving computation speeds `}</span>
-              <b>467.8 times faster</b>
-              <span> than the CPU.</span>
-            </div>
-            <div className="self-stretch flex flex-row flex-wrap items-center justify-start gap-[10px] text-center text-dodgerblue lg:gap-[10px] md:gap-[8px] sm:gap-[5px]">
-              <div className="rounded-lg bg-gray-700 flex flex-row items-center justify-center py-1.5 px-[15px] border-[1px] border-solid border-dodgerblue lg:pl-[15px] lg:box-border md:py-[5px] md:px-2.5 md:box-border sm:py-1 sm:px-2 sm:box-border">
-                <div className="relative tracking-[0.1em] lg:text-base md:text-base sm:text-xs MoTab:text-lg">
-                  System Verilog
-                </div>
-              </div>
-              <div className="rounded-lg bg-gray-700 flex flex-row items-center justify-center py-1.5 px-[15px] border-[1px] border-solid border-dodgerblue lg:pl-[15px] lg:box-border md:py-[5px] md:px-2.5 md:box-border sm:py-1 sm:px-2 sm:box-border">
-                <div className="relative tracking-[0.1em] lg:text-base md:text-base sm:text-xs MoTab:text-lg">{`FPGA `}</div>
-              </div>
-              <div className="rounded-lg bg-gray-700 flex flex-row items-center justify-center py-1.5 px-[15px] border-[1px] border-solid border-dodgerblue lg:pl-[15px] lg:box-border md:py-[5px] md:px-2.5 md:box-border sm:py-1 sm:px-2 sm:box-border">
-                <div className="relative tracking-[0.1em] lg:text-base md:text-base sm:text-xs MoTab:text-lg">
-                  Pulpissimo
-                </div>
-              </div>
-              <div className="rounded-lg bg-gray-700 flex flex-row items-center justify-center py-1.5 px-[15px] border-[1px] border-solid border-dodgerblue lg:pl-[15px] lg:box-border md:py-[5px] md:px-2.5 md:box-border sm:py-1 sm:px-2 sm:box-border">
-                <div className="relative tracking-[0.1em] lg:text-base md:text-base sm:text-xs MoTab:text-lg">
-                  Linux
-                </div>
-              </div>
-              <div className="rounded-lg bg-gray-700 flex flex-row items-center justify-center py-1.5 px-[15px] border-[1px] border-solid border-dodgerblue lg:pl-[15px] lg:box-border md:py-[5px] md:px-2.5 md:box-border sm:py-1 sm:px-2 sm:box-border">
-                <div className="relative tracking-[0.1em] lg:text-base md:text-base sm:text-xs MoTab:text-lg">
-                  Open Source
-                </div>
-              </div>
-            </div>
-          </div>
+          <FrameComponent4 />
         </div>
         <b className="self-stretch relative tracking-[0.02em] leading-[50px] lg:text-11xl md:text-6xl sm:text-xl sm:leading-[10px]">
           PROJECTS
         </b>
-        <div className="self-stretch flex flex-row flex-wrap items-center justify-center p-5 gap-[20px] text-left text-11xl text-white">
-          <GroupComponent3 />
-          <div className="rounded-xl bg-gray-100 flex flex-col items-center justify-center p-5 gap-[20px]">
-            <img
-              className="self-stretch relative rounded max-w-full overflow-hidden h-[213px] shrink-0 object-cover sm:self-stretch sm:w-auto sm:h-[100px] MoTab:self-stretch MoTab:w-auto MoTab:h-[100px]"
-              alt=""
-              src="/rectangle-81@2x.png"
-            />
-            <div className="w-[665px] flex flex-col items-start justify-start gap-[17px] MoTab:self-stretch MoTab:w-auto">
-              <b className="self-stretch relative lg:text-8xl md:text-6xl sm:text-2xl">
-                Smart Plant Monitoring System - IOT
-              </b>
-              <div className="w-[665px] relative text-2xl tracking-[0.1em] font-nunito inline-block lg:text-lg md:text-base sm:text-xs MoTab:self-stretch MoTab:w-auto">
-                The Smart Gardening System is an IoT solution for automating and
-                optimizing garden care. Using the ESP8266 NodeMCU, various
-                sensors, and the Blynk app, it remotely monitors soil moisture,
-                temperature, and humidity, and controls irrigation
-                automatically.
-              </div>
-            </div>
-            <div className="self-stretch flex flex-row flex-wrap items-center justify-start gap-[15px] text-center text-lg text-gray-100 font-nunito">
-              <div className="rounded-lg bg-whitesmoke flex flex-row items-center justify-center py-1.5 px-[15px] lg:pl-[15px] lg:box-border md:py-[5px] md:px-2.5 md:box-border sm:py-1 sm:px-2 sm:box-border">
-                <div className="relative tracking-[0.1em] font-medium lg:text-base md:text-base sm:text-xs MoTab:text-lg">
-                  Embedded C
-                </div>
-              </div>
-              <div className="rounded-lg bg-whitesmoke flex flex-row items-center justify-center py-1.5 px-[15px] lg:pl-[15px] lg:box-border md:py-[5px] md:px-2.5 md:box-border sm:py-1 sm:px-2 sm:box-border">
-                <div className="relative tracking-[0.1em] font-medium lg:text-base md:text-base sm:text-xs MoTab:text-lg">
-                  Blynk IOT
-                </div>
-              </div>
-              <div className="rounded-lg bg-whitesmoke flex flex-row items-center justify-center py-1.5 px-[15px] lg:pl-[15px] lg:box-border md:py-[5px] md:px-2.5 md:box-border sm:py-1 sm:px-2 sm:box-border">
-                <div className="relative tracking-[0.1em] font-medium lg:text-base md:text-base sm:text-xs MoTab:text-lg">
-                  ESP8266
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="rounded-xl bg-gray-100 flex flex-col items-center justify-center p-5 gap-[20px]">
-            <img
-              className="self-stretch relative max-w-full overflow-hidden h-[213px] shrink-0 object-cover sm:self-stretch sm:w-auto sm:h-[100px] MoTab:self-stretch MoTab:w-auto MoTab:h-[100px]"
-              alt=""
-              src="/rectangle-82@2x.png"
-            />
-            <div className="w-[665px] flex flex-col items-start justify-start gap-[17px] MoTab:self-stretch MoTab:w-auto">
-              <b className="self-stretch relative lg:text-8xl md:text-6xl sm:text-2xl">
-                Personal Finance Management App
-              </b>
-              <div className="w-[665px] relative text-2xl tracking-[0.1em] font-nunito inline-block lg:text-lg md:text-base sm:text-xs MoTab:self-stretch MoTab:w-auto">
-                This application allowed users to manage their personal
-                finances, group their income and expenses categorically, and
-                view the reports. I conceptualized this app, designed it on
-                Figma and developed its database using SQLite.
-              </div>
-            </div>
-            <div className="self-stretch flex flex-row flex-wrap items-center justify-start gap-[15px] text-center text-lg text-gray-100 font-nunito">
-              <div className="rounded-lg bg-whitesmoke flex flex-row items-center justify-center py-1.5 px-[15px] lg:pl-[15px] lg:box-border md:py-[5px] md:px-2.5 md:box-border sm:py-1 sm:px-2 sm:box-border">
-                <div className="relative tracking-[0.1em] font-medium lg:text-base md:text-base sm:text-xs MoTab:text-lg">
-                  SQLite
-                </div>
-              </div>
-              <div className="rounded-lg bg-whitesmoke flex flex-row items-center justify-center py-1.5 px-[15px] lg:pl-[15px] lg:box-border md:py-[5px] md:px-2.5 md:box-border sm:py-1 sm:px-2 sm:box-border">
-                <div className="relative tracking-[0.1em] font-medium lg:text-base md:text-base sm:text-xs MoTab:text-lg">
-                  Figma
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="rounded-xl bg-gray-100 flex flex-col items-center justify-center p-5 gap-[20px]">
-            <img
-              className="self-stretch relative max-w-full overflow-hidden h-[213px] shrink-0 object-cover sm:self-stretch sm:w-auto sm:h-[100px] MoTab:self-stretch MoTab:w-auto MoTab:h-[100px]"
-              alt=""
-              src="/rectangle-83@2x.png"
-            />
-            <div className="w-[665px] flex flex-col items-start justify-start gap-[17px] MoTab:self-stretch MoTab:w-auto">
-              <b className="self-stretch relative lg:text-8xl md:text-6xl sm:text-2xl">
-                Portfolio Website (version 1)
-              </b>
-              <div className="w-[665px] relative text-2xl tracking-[0.1em] font-nunito inline-block lg:text-lg md:text-base sm:text-xs MoTab:self-stretch MoTab:w-auto">
-                This is the first version of my portfolio website. It’s a static
-                website designed on Figma and developed using HTML and CSS.
-              </div>
-            </div>
-            <div className="self-stretch flex flex-row flex-wrap items-center justify-start gap-[15px] text-center text-lg text-gray-100 font-nunito">
-              <div className="rounded-lg bg-whitesmoke flex flex-row items-center justify-center py-1.5 px-[15px] lg:pl-[15px] lg:box-border md:py-[5px] md:px-2.5 md:box-border sm:py-1 sm:px-2 sm:box-border">
-                <div className="relative tracking-[0.1em] font-medium lg:text-base md:text-base sm:text-xs MoTab:text-lg">
-                  HTML
-                </div>
-              </div>
-              <div className="rounded-lg bg-whitesmoke flex flex-row items-center justify-center py-1.5 px-[15px] lg:pl-[15px] lg:box-border md:py-[5px] md:px-2.5 md:box-border sm:py-1 sm:px-2 sm:box-border">
-                <div className="relative tracking-[0.1em] font-medium lg:text-base md:text-base sm:text-xs MoTab:text-lg">
-                  CSS
-                </div>
-              </div>
-              <div className="rounded-lg bg-whitesmoke flex flex-row items-center justify-center py-1.5 px-[15px] lg:pl-[15px] lg:box-border md:py-[5px] md:px-2.5 md:box-border sm:py-1 sm:px-2 sm:box-border">
-                <div className="relative tracking-[0.1em] font-medium lg:text-base md:text-base sm:text-xs MoTab:text-lg">
-                  Figma
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="rounded-xl bg-gray-100 flex flex-col items-center justify-center p-5 gap-[20px]">
-            <img
-              className="self-stretch relative max-w-full overflow-hidden h-[213px] shrink-0 object-cover sm:self-stretch sm:w-auto sm:h-[100px] MoTab:self-stretch MoTab:w-auto MoTab:h-[100px]"
-              alt=""
-              src="/rectangle-84@2x.png"
-            />
-            <div className="w-[665px] flex flex-col items-start justify-start gap-[17px] MoTab:self-stretch MoTab:w-auto">
-              <b className="self-stretch relative lg:text-8xl md:text-6xl sm:text-2xl">
-                Cafe Management System - IOT
-              </b>
-              <div className="w-[665px] relative text-2xl tracking-[0.1em] font-nunito inline-block lg:text-lg md:text-base sm:text-xs MoTab:self-stretch MoTab:w-auto">
-                We designed an automated system to display a digital menu on an
-                LCD monitor, allowing customers to place orders via keypad. The
-                orders are displayed on a kitchen LCD screen. I learned keypad
-                and LCD interfacing, and Bluetooth wireless communication.
-              </div>
-            </div>
-            <div className="self-stretch flex flex-row flex-wrap items-center justify-start gap-[15px] text-center text-lg text-gray-100 font-nunito">
-              <div className="rounded-lg bg-whitesmoke flex flex-row items-center justify-center py-1.5 px-[15px] lg:pl-[15px] lg:box-border md:py-[5px] md:px-2.5 md:box-border sm:py-1 sm:px-2 sm:box-border">
-                <div className="relative tracking-[0.1em] font-medium lg:text-base md:text-base sm:text-xs MoTab:text-lg">
-                  Proteus
-                </div>
-              </div>
-              <div className="rounded-lg bg-whitesmoke flex flex-row items-center justify-center py-1.5 px-[15px] lg:pl-[15px] lg:box-border md:py-[5px] md:px-2.5 md:box-border sm:py-1 sm:px-2 sm:box-border">
-                <div className="relative tracking-[0.1em] font-medium lg:text-base md:text-base sm:text-xs MoTab:text-lg">
-                  Embedded C
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="rounded-xl bg-gray-100 flex flex-col items-center justify-center p-5 gap-[20px]">
-            <img
-              className="self-stretch relative max-w-full overflow-hidden h-[213px] shrink-0 object-cover sm:self-stretch sm:w-auto sm:h-[100px] MoTab:self-stretch MoTab:w-auto MoTab:h-[100px]"
-              alt=""
-              src="/rectangle-85@2x.png"
-            />
-            <div className="w-[665px] flex flex-col items-start justify-start gap-[17px] MoTab:self-stretch MoTab:w-auto">
-              <b className="self-stretch relative lg:text-8xl md:text-6xl sm:text-2xl">
-                EduVibe Website - UI UX Design
-              </b>
-              <div className="w-[665px] relative text-2xl tracking-[0.1em] inline-block font-nunito lg:text-lg md:text-base sm:text-xs MoTab:self-stretch MoTab:w-auto">
-                <span>{`Designed an educational website to aid students in self-study. It has 3 features - `}</span>
-                <b>Organize</b>
-                <span>{` the study materials, `}</span>
-                <b>Plan</b>
-                <span>{` the work, and enhance the `}</span>
-                <b>Focus</b>
-                <span>{`. `}</span>
-              </div>
-            </div>
-            <div className="self-stretch flex flex-row flex-wrap items-center justify-start text-center text-lg text-gray-100 font-nunito">
-              <div className="rounded-lg bg-whitesmoke flex flex-row items-center justify-center py-1.5 px-[15px] lg:pl-[15px] lg:box-border md:py-[5px] md:px-2.5 md:box-border sm:py-1 sm:px-2 sm:box-border">
-                <div className="relative tracking-[0.1em] font-medium lg:text-base md:text-base sm:text-xs MoTab:text-lg">
-                  Figma
-                </div>
-              </div>
-            </div>
-          </div>
+        <div className="self-stretch flex flex-row flex-wrap items-center justify-center p-5 gap-[20px]">
+          <GroupComponent3
+            rectangle8="/rectangle-8@2x.png"
+            portfolioWebsiteVersion2="Portfolio Website (version 2)"
+            thisIsTheSecondVersionOfM="This is the second version of my portfolio website, showcasing my skills and projects. Developed using Locofy.ai for rapid design-to-code conversion, it features a modern and responsive layout. The site is deployed on GitHub, ensuring easy access and continuous updates."
+            locofyai="Locofy.ai"
+            figma="Figma"
+          />
+          <FrameComponent2
+            rectangle8="/rectangle-81@2x.png"
+            portfolioWebsiteVersion2="Smart Plant Monitoring System - IOT"
+            thisIsTheSecondVersionOfM="The Smart Gardening System is an IoT solution for automating and optimizing garden care. Using the ESP8266 NodeMCU, various sensors, and the Blynk app, it remotely monitors soil moisture, temperature, and humidity, and controls irrigation automatically."
+            embeddedC="Embedded C"
+            blynkIOT="Blynk IOT"
+            eSP8266="ESP8266"
+          />
+          <GroupComponent3
+            rectangle8="/rectangle-82@2x.png"
+            portfolioWebsiteVersion2="Personal Finance Management App"
+            thisIsTheSecondVersionOfM="This application allowed users to manage their personal finances, group their income and expenses categorically, and
+view the reports. I conceptualized this app, designed it on Figma and developed its database using SQLite."
+            locofyai="SQLite"
+            figma="Figma"
+          />
+          <FrameComponent2
+            rectangle8="/rectangle-83@2x.png"
+            portfolioWebsiteVersion2="Portfolio Website (version 1)"
+            thisIsTheSecondVersionOfM="This is the first version of my portfolio website. It’s a static website designed on Figma and developed using HTML and CSS."
+            embeddedC="HTML"
+            blynkIOT="CSS"
+            eSP8266="Figma"
+          />
+          <GroupComponent3
+            rectangle8="/rectangle-84@2x.png"
+            portfolioWebsiteVersion2="Cafe Management System - IOT"
+            thisIsTheSecondVersionOfM="We designed an automated system to display a digital menu on an LCD monitor, allowing customers to place orders via keypad. The orders are displayed on a kitchen LCD screen. I learned keypad and LCD interfacing, and Bluetooth wireless communication."
+            locofyai="Proteus"
+            figma="Embedded C"
+          />
+          <FrameComponent1 />
         </div>
         <b className="self-stretch relative tracking-[0.02em] leading-[50px] lg:text-11xl md:text-6xl sm:text-xl sm:leading-[10px]">
           ACHIEVEMENTS
@@ -294,55 +147,25 @@ const Work: FunctionComponent = () => {
         <b className="self-stretch relative tracking-[0.02em] leading-[50px] lg:text-11xl md:text-6xl sm:text-xl sm:leading-[25px]">
           COLLEGE CLUBS AND LEADERSHIP
         </b>
-        <div className="self-stretch flex flex-col items-start justify-center p-5 gap-[59px] text-9xl text-black font-nunito sm:gap-[30px] sm:pt-0 sm:pb-0 sm:box-border">
-          <div className="self-stretch flex flex-row items-center justify-start py-0 px-2.5 gap-[30px]">
-            <div className="w-[50px] rounded-6xl bg-gainsboro-200 box-border h-[50px] flex flex-col items-center justify-center border-[1px] border-solid border-black lg:w-[45px] lg:h-[45px] md:w-10 md:h-10 sm:w-[30px] sm:h-[30px]">
-              <div className="self-stretch relative font-medium flex items-center justify-center h-[40.4px] shrink-0 lg:text-6xl md:text-3xl sm:text-lgi">
-                1
-              </div>
-            </div>
-            <div className="flex-1 flex flex-col items-start justify-center text-left text-gray-100">
-              <div className="self-stretch relative lg:text-6xl md:text-3xl sm:text-lgi">
-                <span className="font-semibold">{`Head of Design and Core Member | `}</span>
-                <span className="text-gray-300">(May 2022 - April 2023)</span>
-              </div>
-              <div className="self-stretch relative text-3xl font-medium lg:text-2xl md:text-lg sm:text-mini">
-                Google Developer Students Club (GDSC), SVNIT Surat
-              </div>
-            </div>
-          </div>
-          <div className="self-stretch flex flex-row items-center justify-start py-0 px-2.5 gap-[30px]">
-            <div className="w-[50px] rounded-6xl bg-gainsboro-200 box-border h-[50px] flex flex-col items-center justify-center border-[1px] border-solid border-black lg:w-[45px] lg:h-[45px] md:w-10 md:h-10 sm:w-[30px] sm:h-[30px]">
-              <div className="self-stretch relative font-medium flex items-center justify-center h-[40.4px] shrink-0 lg:text-6xl md:text-3xl sm:text-lgi">
-                2
-              </div>
-            </div>
-            <div className="flex-1 flex flex-col items-start justify-center text-left text-gray-100">
-              <div className="self-stretch relative lg:text-6xl md:text-3xl sm:text-lgi">
-                <span className="font-semibold">{`Head | `}</span>
-                <span className="text-gray-300">(May 2022 - April 2023)</span>
-              </div>
-              <div className="self-stretch relative text-3xl font-medium lg:text-2xl md:text-lg sm:text-mini">
-                CHRD Design Group
-              </div>
-            </div>
-          </div>
-          <div className="self-stretch flex flex-row items-center justify-start py-0 px-2.5 gap-[30px]">
-            <div className="w-[50px] rounded-6xl bg-gainsboro-200 box-border h-[50px] flex flex-col items-center justify-center border-[1px] border-solid border-black lg:w-[45px] lg:h-[45px] md:w-10 md:h-10 sm:w-[30px] sm:h-[30px]">
-              <div className="self-stretch relative font-medium flex items-center justify-center h-[40.4px] shrink-0 lg:text-6xl md:text-3xl sm:text-lgi">
-                3
-              </div>
-            </div>
-            <div className="flex-1 flex flex-col items-start justify-center text-left text-gray-100">
-              <div className="self-stretch relative lg:text-6xl md:text-3xl sm:text-lgi">
-                <span className="font-semibold">{`Executive | `}</span>
-                <span className="text-gray-300">(May 2021 - April 2022)</span>
-              </div>
-              <div className="self-stretch relative text-3xl font-medium lg:text-2xl md:text-lg sm:text-mini">
-                Association for Computing Machinery (ACM), SVNIT Surat
-              </div>
-            </div>
-          </div>
+        <div className="self-stretch flex flex-col items-start justify-center p-5 gap-[59px] sm:gap-[30px] sm:pt-0 sm:pb-0 sm:box-border">
+          <Gdsc
+            prop="1"
+            headOfDesignAndCoreMember="Head of Design and Core Member | "
+            may2022April2023="(May 2022 - April 2023)"
+            googleDeveloperStudentsCl="Google Developer Students Club (GDSC), SVNIT Surat"
+          />
+          <Gdsc
+            prop="2"
+            headOfDesignAndCoreMember="Head | "
+            may2022April2023="(May 2022 - April 2023)"
+            googleDeveloperStudentsCl="CHRD Design Group"
+          />
+          <Gdsc
+            prop="3"
+            headOfDesignAndCoreMember="Executive | "
+            may2022April2023="(May 2021 - April 2022)"
+            googleDeveloperStudentsCl="Association for Computing Machinery (ACM), SVNIT Surat"
+          />
         </div>
       </div>
     </div>

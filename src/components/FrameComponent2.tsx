@@ -1,21 +1,23 @@
 import { FunctionComponent } from "react";
 
-export type GroupComponent3Type = {
+export type FrameComponent2Type = {
   className?: string;
   rectangle8?: string;
   portfolioWebsiteVersion2?: string;
   thisIsTheSecondVersionOfM?: string;
-  locofyai?: string;
-  figma?: string;
+  embeddedC?: string;
+  blynkIOT?: string;
+  eSP8266?: string;
 };
 
-const GroupComponent3: FunctionComponent<GroupComponent3Type> = ({
+const FrameComponent2: FunctionComponent<FrameComponent2Type> = ({
   className = "",
   rectangle8,
   portfolioWebsiteVersion2,
   thisIsTheSecondVersionOfM,
-  locofyai,
-  figma,
+  embeddedC,
+  blynkIOT,
+  eSP8266,
 }) => {
   return (
     <div
@@ -26,7 +28,7 @@ const GroupComponent3: FunctionComponent<GroupComponent3Type> = ({
         alt=""
         src={rectangle8}
       />
-      <div className="self-stretch flex flex-col items-start justify-start gap-[17px]">
+      <div className="w-[665px] flex flex-col items-start justify-start gap-[17px] MoTab:self-stretch MoTab:w-auto">
         <b className="self-stretch relative lg:text-8xl md:text-6xl sm:text-2xl">
           {portfolioWebsiteVersion2}
         </b>
@@ -37,12 +39,17 @@ const GroupComponent3: FunctionComponent<GroupComponent3Type> = ({
       <div className="self-stretch flex flex-row flex-wrap items-center justify-start gap-[15px] text-center text-lg text-gray-100 font-nunito">
         <div className="rounded-lg bg-whitesmoke flex flex-row items-center justify-center py-1.5 px-[15px] lg:pl-[15px] lg:box-border md:py-[5px] md:px-2.5 md:box-border sm:py-1 sm:px-2 sm:box-border">
           <div className="relative tracking-[0.1em] font-medium lg:text-base md:text-base sm:text-xs MoTab:text-lg">
-            {locofyai}
+            {embeddedC}
           </div>
         </div>
         <div className="rounded-lg bg-whitesmoke flex flex-row items-center justify-center py-1.5 px-[15px] lg:pl-[15px] lg:box-border md:py-[5px] md:px-2.5 md:box-border sm:py-1 sm:px-2 sm:box-border">
           <div className="relative tracking-[0.1em] font-medium lg:text-base md:text-base sm:text-xs MoTab:text-lg">
-            {figma}
+            {blynkIOT}
+          </div>
+        </div>
+        <div className="rounded-lg bg-whitesmoke flex flex-row items-center justify-center py-1.5 px-[15px] lg:pl-[15px] lg:box-border md:py-[5px] md:px-2.5 md:box-border sm:py-1 sm:px-2 sm:box-border">
+          <div className="relative tracking-[0.1em] font-medium lg:text-base md:text-base sm:text-xs MoTab:text-lg">
+            {eSP8266}
           </div>
         </div>
       </div>
@@ -50,4 +57,4 @@ const GroupComponent3: FunctionComponent<GroupComponent3Type> = ({
   );
 };
 
-export default GroupComponent3;
+export default FrameComponent2;

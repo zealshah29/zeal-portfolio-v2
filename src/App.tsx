@@ -8,6 +8,7 @@ import {
 import Home from "./pages/Home";
 import Blog from "./pages/Blog";
 import Work from "./pages/Work";
+import Loading from "./pages/Loading";
 
 function App() {
   const action = useNavigationType();
@@ -37,6 +38,10 @@ function App() {
         title = "";
         metaDescription = "";
         break;
+      case "/loading":
+        title = "";
+        metaDescription = "";
+        break;
     }
 
     if (title) {
@@ -58,6 +63,7 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/blog" element={<Blog />} />
       <Route path="/work" element={<Work />} />
+      <Route path="/loading" element={<Loading />} />
     </Routes>
   );
 }
