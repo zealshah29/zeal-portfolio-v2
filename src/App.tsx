@@ -7,8 +7,8 @@ import {
 } from "react-router-dom";
 import Home from "./pages/Home";
 import Blog from "./pages/Blog";
-import Loading from "./pages/Loading";
 import Work from "./pages/Work";
+import Loading from "./pages/Loading";
 
 function App() {
   const action = useNavigationType();
@@ -34,11 +34,11 @@ function App() {
         title = "";
         metaDescription = "";
         break;
-      case "/loading":
+      case "/work":
         title = "";
         metaDescription = "";
         break;
-      case "/work":
+      case "/loading":
         title = "";
         metaDescription = "";
         break;
@@ -62,8 +62,8 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/blog" element={<Blog />} />
-      <Route path="/loading" element={<Loading />} />
       <Route path="/work" element={<Work />} />
+      <Route path="/loading" element={<Loading />} />
     </Routes>
   );
 }
