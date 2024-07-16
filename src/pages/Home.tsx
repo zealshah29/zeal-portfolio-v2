@@ -19,7 +19,7 @@ const Home: FunctionComponent = () => {
   return (
     <div className="w-full relative bg-white overflow-hidden flex flex-row flex-wrap items-center justify-center gap-[0px_410px] text-left text-mini text-blue font-nunito lg:h-auto sm:flex-row">
       <NavbarHome />
-      <div className="h-12 w-[1550px] bg-white box-border flex flex-row items-center justify-between py-3.5 px-10 border-[0.5px] border-solid border-gainsboro-300 sm:flex">
+      <div className="h-[49px] w-[1551px] bg-white box-border flex flex-row items-center justify-between py-3.5 px-10 border-[0.5px] border-solid border-gainsboro-300 sm:flex">
         <div className="w-[110px] relative h-[31px]">
           <div className="absolute top-[0px] left-[0px] bg-gainsboro-200 box-border w-[110px] h-[31px] border-[1px] border-solid border-blue" />
           <div
@@ -49,7 +49,7 @@ const Home: FunctionComponent = () => {
         id="decorative"
       />
       <section
-        className="w-[1511px] bg-white box-border flex flex-row flex-wrap items-center justify-center py-[15px] px-[100px] text-center text-21xl text-black font-nunito-sans border-[0.5px] border-solid border-dimgray-100"
+        className="w-[1511px] bg-white flex flex-row flex-wrap items-center justify-center py-[15px] px-[100px] box-border text-center text-21xl text-black font-nunito-sans"
         id="heading"
       >
         <h1
@@ -72,7 +72,7 @@ const Home: FunctionComponent = () => {
         </h1>
       </section>
       <section
-        className="flex-1 bg-white flex flex-row flex-wrap items-center justify-center py-10 px-[120px] gap-[50px_250px] text-left text-2xl text-black font-nunito border-[0.5px] border-solid border-dimgray-100 sm:flex-col MoTab:flex-col"
+        className="flex-1 bg-white flex flex-row flex-wrap items-center justify-center py-10 px-[120px] gap-[50px_250px] text-left text-2xl text-black font-nunito sm:flex-col MoTab:flex-col"
         id="content"
       >
         <div className="w-[417px] relative tracking-[0.1em] flex items-center shrink-0 lg:w-[380px] md:text-lg md:w-[280px] sm:text-mini sm:text-justify sm:w-[250px] MoTab:text-base MoTab:text-justify">

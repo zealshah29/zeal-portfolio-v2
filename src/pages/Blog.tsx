@@ -52,8 +52,8 @@ const Blog: FunctionComponent = () => {
 
   return (
     <>
-      <div className="w-full relative bg-white overflow-y-auto flex flex-col items-start justify-start gap-[10px] text-left text-mini text-blue font-nunito">
-        <header className="self-stretch bg-white box-border h-[63px] overflow-hidden shrink-0 flex flex-row items-center justify-between py-[13px] px-[70px] text-center text-xl text-dimgray-300 font-sen border-[0.5px] border-solid border-gainsboro-100">
+      <div className="w-full relative bg-white overflow-y-auto flex flex-col items-center justify-start text-left text-mini text-blue font-nunito">
+        <header className="self-stretch bg-white box-border h-14 overflow-hidden shrink-0 flex flex-row items-center justify-between py-[13px] px-[70px] text-center text-xl text-dimgray-300 font-sen border-[0.5px] border-solid border-gainsboro-100">
           <b className="relative">Zeal</b>
           <div className="w-[314px] flex flex-row items-center justify-between text-lg text-black font-nunito sm:hidden MoTab:hidden">
             <div className="relative cursor-pointer" onClick={onHomeTextClick}>
@@ -71,7 +71,7 @@ const Blog: FunctionComponent = () => {
             onClick={openAndroidMenuBlog}
           />
         </header>
-        <div className="self-stretch h-12 bg-white box-border shrink-0 flex flex-row items-center justify-between py-3.5 px-10 border-[0.5px] border-solid border-gainsboro-300 sm:flex">
+        <div className="self-stretch h-[49px] bg-white box-border shrink-0 flex flex-row items-center justify-between py-3.5 px-10 border-[0.5px] border-solid border-gainsboro-300 sm:flex">
           <div className="w-[110px] relative h-[31px]">
             <div className="absolute top-[0px] left-[0px] bg-gainsboro-200 box-border w-[110px] h-[31px] border-[1px] border-solid border-blue" />
             <div

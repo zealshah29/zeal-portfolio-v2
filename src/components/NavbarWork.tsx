@@ -30,7 +30,7 @@ const NavbarWork: FunctionComponent<NavbarWorkType> = ({ className = "" }) => {
   return (
     <>
       <div
-        className={`self-stretch bg-white box-border h-[71px] overflow-hidden shrink-0 flex flex-row items-center justify-between py-[17px] px-[49px] text-center text-xl text-gray-100 font-sen border-[0.5px] border-solid border-gainsboro-100 ${className}`}
+        className={`self-stretch bg-white box-border h-14 overflow-hidden shrink-0 flex flex-row items-center justify-between py-[17px] px-[49px] text-center text-xl text-gray-100 font-sen border-[0.5px] border-solid border-gainsboro-100 ${className}`}
       >
         <b className="relative">Zeal</b>
         <div className="w-[313px] flex flex-row items-center justify-between text-lg text-black font-nunito sm:hidden MoTab:hidden">

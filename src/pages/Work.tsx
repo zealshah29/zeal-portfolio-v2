@@ -25,7 +25,7 @@ const Work: FunctionComponent = () => {
   return (
     <div className="w-full relative bg-white overflow-hidden flex flex-col items-start justify-start text-left text-mini text-blue font-nunito">
       <NavbarWork />
-      <div className="self-stretch h-12 bg-white box-border flex flex-row items-center justify-between py-3.5 px-10 border-[0.5px] border-solid border-gainsboro-300 sm:flex">
+      <div className="self-stretch h-[49px] bg-white box-border flex flex-row items-center justify-between py-3.5 px-10 border-[0.5px] border-solid border-gainsboro-300 sm:flex">
         <div className="w-[110px] relative h-[31px]">
           <div className="absolute top-[0px] left-[0px] bg-gainsboro-200 box-border w-[110px] h-[31px] border-[1px] border-solid border-blue" />
           <div

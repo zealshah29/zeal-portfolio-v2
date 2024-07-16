@@ -5,6 +5,19 @@ module.exports = {
     extend: {
       colors: {
         white: "#fff",
+        dimgray: {
+          "200": "#696868",
+          "300": "#4e4e4e",
+        },
+        black: "#000",
+        lightgray: "#cacaca",
+        gainsboro: {
+          "100": "#d9d9d9",
+          "200": "rgba(217, 217, 217, 0)",
+          "300": "rgba(217, 217, 217, 0.5)",
+        },
+        blue: "#0000ee",
+        dodgerblue: "#4285f4",
         gray: {
           "100": "#252525",
           "200": "rgba(0, 0, 0, 0.4)",
@@ -13,20 +26,7 @@ module.exports = {
           "500": "rgba(0, 0, 0, 0.7)",
           "700": "rgba(255, 255, 255, 0)",
         },
-        gainsboro: {
-          "100": "#d9d9d9",
-          "200": "rgba(217, 217, 217, 0)",
-          "300": "rgba(217, 217, 217, 0.5)",
-        },
-        blue: "#0000ee",
-        dodgerblue: "#4285f4",
-        black: "#000",
-        dimgray: {
-          "100": "#6f6f6f",
-          "200": "#696868",
-          "300": "#4e4e4e",
-        },
-        lightgray: "#cacaca",
+        whitesmoke: "#f7f7f7",
         blueviolet: "#9747ff",
         whitesmoke: "#f7f7f7",
       },
