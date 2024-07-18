@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/zeal-portfolio-v2/static/css/main.3d57c2f9.css",
+    "main.js": "/zeal-portfolio-v2/static/js/main.139f29c0.js",
+    "static/js/453.aac68abc.chunk.js": "/zeal-portfolio-v2/static/js/453.aac68abc.chunk.js",
+    "index.html": "/zeal-portfolio-v2/index.html",
+    "main.3d57c2f9.css.map": "/zeal-portfolio-v2/static/css/main.3d57c2f9.css.map",
+    "main.139f29c0.js.map": "/zeal-portfolio-v2/static/js/main.139f29c0.js.map",
+    "453.aac68abc.chunk.js.map": "/zeal-portfolio-v2/static/js/453.aac68abc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3d57c2f9.css",
+    "static/js/main.139f29c0.js"
+  ]
+}
