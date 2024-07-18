@@ -64,7 +64,6 @@ module.exports = {
       sm: "14px",
       smi: "13px",
       "51xl": "70px",
-      "81xl": "100px",
       inherit: "inherit",
     },
     screens: {

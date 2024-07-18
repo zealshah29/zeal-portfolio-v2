@@ -19,7 +19,7 @@ const Home: FunctionComponent = () => {
   return (
     <div className="relative bg-white w-full overflow-hidden flex flex-col items-center justify-center text-left text-mini text-blue font-nunito lg:h-auto sm:flex-col">
       <NavbarHome />
-      <div className="w-[1551px] h-[49px] bg-white box-border flex flex-row items-center justify-between py-3.5 px-10 border-[0.5px] border-solid border-gainsboro-300 sm:flex sm:self-stretch sm:w-auto">
+      <div className="self-stretch h-[49px] bg-white box-border flex flex-row items-center justify-between py-3.5 px-10 border-[0.5px] border-solid border-gainsboro-300 sm:flex sm:self-stretch sm:w-auto">
         <div className="w-[110px] relative h-[31px]">
           <div className="absolute top-[0px] left-[0px] bg-gainsboro-200 box-border w-[110px] h-[31px] border-[1px] border-solid border-blue" />
           <div

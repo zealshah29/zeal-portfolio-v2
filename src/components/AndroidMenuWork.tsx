@@ -1,5 +1,4 @@
 import { FunctionComponent, useCallback, useEffect } from "react";
-import Logo1 from "./Logo";
 import { useNavigate } from "react-router-dom";
 
 export type AndroidMenuWorkType = {
@@ -55,13 +54,9 @@ const AndroidMenuWork: FunctionComponent<AndroidMenuWorkType> = ({
       className={`w-[360px] h-full relative bg-white overflow-hidden [&.animate]:animate-[0.25s_ease_0s_1_normal_forwards_slide-in-right] opacity-[0] max-w-[90%] text-center text-lg text-black font-nunito ${className}`}
       data-animate-on-scroll
     >
-      <Logo1
-        logoWidth="117px"
-        logoHeight="116px"
-        logoPosition="absolute"
-        logoTop="61px"
-        logoLeft="121px"
-      />
+      <div className="absolute top-[61px] left-[121px] w-[117px] h-[116px] text-51xl text-dimgray-300 font-sen">
+        <b className="absolute top-[11.47%] left-[calc(50%_-_75.5px)]">Zeal</b>
+      </div>
       <div
         className="absolute top-[286px] left-[152px] cursor-pointer"
         onClick={onHOMETextClick}
