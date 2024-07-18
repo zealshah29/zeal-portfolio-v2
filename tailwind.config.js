@@ -5,10 +5,6 @@ module.exports = {
     extend: {
       colors: {
         white: "#fff",
-        dimgray: {
-          "200": "#696868",
-          "300": "#4e4e4e",
-        },
         black: "#000",
         lightgray: "#cacaca",
         gainsboro: {
@@ -18,6 +14,7 @@ module.exports = {
         },
         blue: "#0000ee",
         dodgerblue: "#4285f4",
+        dimgray: "#4e4e4e",
         gray: {
           "100": "#252525",
           "200": "rgba(0, 0, 0, 0.4)",
@@ -42,13 +39,13 @@ module.exports = {
       },
     },
     fontSize: {
+      "2xl": "21px",
+      lg: "18px",
       mini: "15px",
+      base: "16px",
       xs: "12px",
       "3xs": "10px",
       "2xs": "11px",
-      "2xl": "21px",
-      lg: "18px",
-      base: "16px",
       "21xl": "40px",
       "11xl": "30px",
       xl: "20px",
@@ -64,6 +61,7 @@ module.exports = {
       sm: "14px",
       smi: "13px",
       "51xl": "70px",
+      "81xl": "100px",
       inherit: "inherit",
     },
     screens: {

@@ -1,6 +1,6 @@
 import { FunctionComponent } from "react";
 
-export type GdscType = {
+export type ClubsType = {
   className?: string;
   prop?: string;
   headOfDesignAndCoreMember?: string;
@@ -8,7 +8,7 @@ export type GdscType = {
   googleDeveloperStudentsCl?: string;
 };
 
-const Gdsc: FunctionComponent<GdscType> = ({
+const Clubs: FunctionComponent<ClubsType> = ({
   className = "",
   prop,
   headOfDesignAndCoreMember,
@@ -37,4 +37,4 @@ const Gdsc: FunctionComponent<GdscType> = ({
   );
 };
 
-export default Gdsc;
+export default Clubs;
