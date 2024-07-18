@@ -22,6 +22,14 @@ const Work: FunctionComponent = () => {
     window.open("https://github.com/zealshah29");
   }, []);
 
+  const onFrameContainerClick = useCallback(() => {
+    window.open("https://github.com/zealshah29/TripTrekker");
+  }, []);
+
+  const onFrameContainerClick1 = useCallback(() => {
+    window.open("https://github.com/zealshah29/MHz-Dotslash-1");
+  }, []);
+
   return (
     <div className="w-full relative bg-white overflow-hidden flex flex-col items-start justify-start text-left text-mini text-blue font-nunito">
       <NavbarWork />
@@ -99,7 +107,7 @@ view the reports. I conceptualized this app, designed it on Figma and developed 
           <GroupComponent3
             rectangle8="/rectangle-84@2x.png"
             portfolioWebsiteVersion2="Cafe Management System - IOT"
-            thisIsTheSecondVersionOfM="We designed an automated system to display a digital menu on an LCD monitor, allowing customers to place orders via keypad. The orders are displayed on a kitchen LCD screen. I learned keypad and LCD interfacing, and Bluetooth wireless communication."
+            thisIsTheSecondVersionOfM="Worked in a team of 7 to make an automated system that allows customers in a cafe to place their orders via keypad. The orders are displayed on a kitchen LCD screen. I learned keypad and LCD interfacing, and Bluetooth wireless communication."
             locofyai="Proteus"
             figma="Embedded C"
           />
@@ -109,7 +117,10 @@ view the reports. I conceptualized this app, designed it on Figma and developed 
           ACHIEVEMENTS
         </b>
         <div className="self-stretch flex flex-row flex-wrap items-center justify-center py-10 px-[30px] gap-[20px_50px] text-left text-11xl text-gray-100">
-          <div className="rounded-10xs bg-white flex flex-col items-center justify-center py-[21px] px-5 gap-[40px] border-[0.5px] border-solid border-gray-200">
+          <div
+            className="rounded-10xs bg-white flex flex-col items-center justify-center py-[21px] px-5 gap-[40px] cursor-pointer border-[0.5px] border-solid border-gray-200"
+            onClick={onFrameContainerClick}
+          >
             <img
               className="w-[640px] relative rounded-10xs h-[448.9px] object-cover lg:w-[400px] lg:h-[300px] md:w-[360px] md:h-[270px] sm:w-[280px] sm:h-[210px]"
               alt=""
@@ -126,7 +137,10 @@ view the reports. I conceptualized this app, designed it on Figma and developed 
               </div>
             </div>
           </div>
-          <div className="rounded-10xs bg-white flex flex-col items-center justify-center py-[21px] px-5 gap-[40px] border-[0.5px] border-solid border-gray-200">
+          <div
+            className="rounded-10xs bg-white flex flex-col items-center justify-center py-[21px] px-5 gap-[40px] cursor-pointer border-[0.5px] border-solid border-gray-200"
+            onClick={onFrameContainerClick1}
+          >
             <img
               className="w-[640px] relative rounded-10xs h-[448.9px] object-cover lg:w-[400px] lg:h-[300px] md:w-[360px] md:h-[270px] sm:w-[280px] sm:h-[210px]"
               alt=""

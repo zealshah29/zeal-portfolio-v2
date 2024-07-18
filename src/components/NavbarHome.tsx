@@ -30,7 +30,7 @@ const NavbarHome: FunctionComponent<NavbarHomeType> = ({ className = "" }) => {
   return (
     <>
       <header
-        className={`flex-1 bg-white box-border h-14 overflow-hidden flex flex-row items-end justify-between py-[13px] px-[70px] text-center text-xl text-dimgray-300 font-sen border-[0.5px] border-solid border-gainsboro-100 ${className}`}
+        className={`self-stretch bg-white box-border h-14 overflow-hidden shrink-0 flex flex-row items-end justify-between py-[13px] px-[70px] text-center text-xl text-dimgray-300 font-sen border-[0.5px] border-solid border-gainsboro-100 ${className}`}
         id="homenav"
       >
         <b className="relative">Zeal</b>

@@ -1,4 +1,4 @@
-import { FunctionComponent } from "react";
+import { FunctionComponent, useCallback } from "react";
 
 export type GroupComponent3Type = {
   className?: string;
@@ -17,9 +17,14 @@ const GroupComponent3: FunctionComponent<GroupComponent3Type> = ({
   locofyai,
   figma,
 }) => {
+  const onFrameContainerClick = useCallback(() => {
+    window.open("https://github.com/zealshah29/zeal-portfolio-v2");
+  }, []);
+
   return (
     <div
-      className={`rounded-xl bg-gray-100 flex flex-col items-center justify-center p-5 gap-[20px] text-left text-11xl text-white font-nunito-sans ${className}`}
+      className={`rounded-xl bg-gray-100 flex flex-col items-center justify-center p-5 gap-[20px] cursor-pointer text-left text-11xl text-white font-nunito-sans ${className}`}
+      onClick={onFrameContainerClick}
     >
       <img
         className="self-stretch relative rounded max-w-full overflow-hidden h-[213px] shrink-0 object-cover sm:self-stretch sm:w-auto sm:h-[100px] MoTab:self-stretch MoTab:w-auto MoTab:h-[100px]"

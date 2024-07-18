@@ -1,5 +1,5 @@
 import { FunctionComponent, useCallback, useEffect } from "react";
-import Logo from "./Logo";
+import Logo1 from "./Logo";
 import { useNavigate } from "react-router-dom";
 
 export type AndroidMenuBlogType = {
@@ -55,7 +55,7 @@ const AndroidMenuBlog: FunctionComponent<AndroidMenuBlogType> = ({
       className={`w-[360px] h-full relative bg-white overflow-hidden [&.animate]:animate-[0.25s_ease_0s_1_normal_forwards_slide-in-right] opacity-[0] max-w-[90%] text-center text-lg text-black font-nunito ${className}`}
       data-animate-on-scroll
     >
-      <Logo
+      <Logo1
         logoWidth="117px"
         logoHeight="116px"
         logoPosition="absolute"

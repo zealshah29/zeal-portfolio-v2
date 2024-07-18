@@ -34,7 +34,6 @@ module.exports = {
         nunito: "Nunito",
         "nunito-sans": "'Nunito Sans'",
         sen: "Sen",
-        "cinzel-decorative": "'Cinzel Decorative'",
       },
       borderRadius: {
         xl: "20px",
@@ -64,8 +63,8 @@ module.exports = {
       "5xl": "24px",
       sm: "14px",
       smi: "13px",
-      "81xl": "100px",
       "51xl": "70px",
+      "81xl": "100px",
       inherit: "inherit",
     },
     screens: {
