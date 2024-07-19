@@ -53,7 +53,7 @@ const Blog: FunctionComponent = () => {
     <>
       <div className="w-full relative bg-white overflow-y-auto flex flex-col items-center justify-start text-left text-mini text-blue font-nunito">
         <header className="self-stretch bg-white box-border h-14 overflow-hidden shrink-0 flex flex-row items-center justify-between py-[13px] px-[70px] text-center text-xl text-dimgray font-sen border-[0.5px] border-solid border-gainsboro-100">
-          <b className="relative">Zeal</b>
+          <b className="relative">Zeal Shah</b>
           <div className="w-[314px] flex flex-row items-center justify-between text-lg text-black font-nunito sm:hidden MoTab:hidden">
             <div className="relative cursor-pointer" onClick={onHomeTextClick}>
               Home

@@ -76,7 +76,7 @@ const Work: FunctionComponent = () => {
     <>
       <div className="w-full relative bg-white overflow-hidden flex flex-col items-start justify-start text-center text-xl text-gray-100 font-sen">
         <div className="self-stretch bg-white box-border h-14 overflow-hidden shrink-0 flex flex-row items-center justify-between py-[17px] px-[49px] border-[0.5px] border-solid border-gainsboro-100">
-          <b className="relative">Zeal</b>
+          <b className="relative">Zeal Shah</b>
           <div className="w-[313px] flex flex-row items-center justify-between text-lg text-black font-nunito sm:hidden MoTab:hidden">
             <div className="relative cursor-pointer" onClick={onHomeTextClick}>
               Home

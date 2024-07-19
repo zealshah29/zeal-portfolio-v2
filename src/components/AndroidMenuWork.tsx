@@ -54,9 +54,6 @@ const AndroidMenuWork: FunctionComponent<AndroidMenuWorkType> = ({
       className={`w-[360px] h-full relative bg-white overflow-hidden [&.animate]:animate-[0.25s_ease_0s_1_normal_forwards_slide-in-right] opacity-[0] max-w-[90%] text-center text-lg text-black font-nunito ${className}`}
       data-animate-on-scroll
     >
-      <div className="absolute top-[61px] left-[121px] w-[117px] h-[116px] text-51xl text-dimgray font-sen">
-        <b className="absolute top-[11.47%] left-[calc(50%_-_75.5px)]">Zeal</b>
-      </div>
       <div
         className="absolute top-[286px] left-[152px] cursor-pointer"
         onClick={onHOMETextClick}
@@ -69,6 +66,12 @@ const AndroidMenuWork: FunctionComponent<AndroidMenuWorkType> = ({
         onClick={onBLOGTextClick}
       >
         BLOG
+      </div>
+      <div className="absolute top-[29px] left-[89px] w-[182px] h-[225px] text-51xl text-dimgray font-sen">
+        <b className="absolute top-[12.76%] left-[calc(50%_-_117px)] inline-block w-[235px]">
+          <p className="m-0">Zeal</p>
+          <p className="m-0">Shah</p>
+        </b>
       </div>
     </div>
   );

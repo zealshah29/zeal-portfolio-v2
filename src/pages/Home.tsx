@@ -44,7 +44,7 @@ const Home: FunctionComponent = () => {
           className="self-stretch bg-white box-border h-14 overflow-hidden shrink-0 flex flex-row items-end justify-between py-[13px] px-[70px] text-center text-xl text-dimgray font-sen border-[0.5px] border-solid border-gainsboro-100"
           id="homenav"
         >
-          <b className="relative">Zeal</b>
+          <b className="relative">Zeal Shah</b>
           <nav className="m-0 w-[313px] flex flex-row items-center justify-between text-center text-lg text-black font-nunito sm:hidden MoTab:hidden">
             <b className="relative text-dodgerblue">Home</b>
             <Link
@@ -107,7 +107,7 @@ const Home: FunctionComponent = () => {
           id="decorative"
         />
         <section
-          className="self-stretch bg-white flex flex-row flex-wrap items-center justify-center py-[15px] px-[100px] text-center text-21xl text-black font-nunito-sans"
+          className="self-stretch bg-white flex flex-row flex-wrap items-center justify-center py-[15px] px-[100px] text-center text-21xl text-black font-nunito-sans border-b-[0.3px] border-solid border-gray-200"
           id="heading"
         >
           <h1
@@ -129,12 +129,6 @@ const Home: FunctionComponent = () => {
             </p>
           </h1>
         </section>
-        <div className="self-stretch bg-white overflow-hidden flex flex-row items-center justify-center py-[5px] px-[98px] text-center text-black">
-          <div className="relative tracking-[0.1em] lg:w-[380px] md:text-xs md:text-center md:w-[280px] sm:text-3xs sm:text-center sm:w-[250px] MoTab:text-2xs MoTab:text-center">
-            <span className="font-medium">{`This website has been built using `}</span>
-            <b>AI</b>
-          </div>
-        </div>
         <section
           className="self-stretch bg-white flex flex-row items-center justify-center py-10 px-[120px] gap-[200px] text-justify text-2xl text-black font-nunito lg:gap-[100px] md:flex-row md:flex-wrap md:gap-[50px] md:pl-[70px] md:pr-[70px] md:box-border sm:flex-row sm:flex-wrap sm:pl-[50px] sm:pr-[50px] sm:box-border MoTab:flex-col MoTab:gap-[50px] MoTab:pl-[50px] MoTab:pr-[50px] MoTab:box-border"
           id="content"
@@ -152,6 +146,14 @@ const Home: FunctionComponent = () => {
             src="/zz5lqevsmy@2x.png"
           />
         </section>
+        <div className="self-stretch bg-white overflow-hidden flex flex-row items-center justify-center py-[30px] px-[50px] text-center text-xl text-gray-600 border-t-[0.3px] border-solid border-gray-200 sm:pt-[30px] sm:pb-[30px] sm:box-border">
+          <div className="relative tracking-[0.1em] lg:w-[380px] md:text-mini md:text-center md:w-[280px] sm:text-xs sm:text-center sm:w-[250px] MoTab:text-smi MoTab:text-center">
+            <span className="font-medium">{`This website is designed by `}</span>
+            <b className="text-black">Zeal Shah</b>
+            <span className="font-medium">{` and powered by `}</span>
+            <b className="text-black">AI</b>
+          </div>
+        </div>
       </div>
       {isAndroidMenuOpen && (
         <PortalDrawer
