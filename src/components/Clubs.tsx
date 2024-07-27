@@ -1,4 +1,4 @@
-import { FunctionComponent } from "react";
+import { FunctionComponent, useCallback } from "react";
 
 export type ClubsType = {
   className?: string;
@@ -15,22 +15,92 @@ const Clubs: FunctionComponent<ClubsType> = ({
   may2022April2023,
   googleDeveloperStudentsCl,
 }) => {
+  const onFrameContainerClick = useCallback(() => {
+    window.open(
+      "https://youtube.com/playlist?list=PLCRMIe5FDPsd0gVs500xeOewfySTsmEjf&si=BUynwY901MiITsXL"
+    );
+  }, []);
+
+  const onFrameContainerClick1 = useCallback(() => {
+    window.open(
+      "https://developers.google.com/machine-learning/crash-course/ml-intro"
+    );
+  }, []);
+
+  const onFrameContainerClick2 = useCallback(() => {
+    window.open(
+      "https://youtube.com/playlist?list=PLdW8AKJtqW7u7JKzkiXsDxNFlOrmjGwDJ&si=HKCiFU8FGsC3mnfZ"
+    );
+  }, []);
+
+  const onFrameContainerClick3 = useCallback(() => {
+    window.open(
+      "https://youtube.com/playlist?list=PLAwxTw4SYaPlTr1MmjkAZXVv8Su2CfY7D&si=MpbJuzj3PbVBX20T"
+    );
+  }, []);
+
+  const onFrameContainerClick4 = useCallback(() => {
+    window.open(
+      "https://youtube.com/playlist?list=PLxCzCOWd7aiFAN6I8CuViBuCdJgiOkT2Y&si=8dZA9geeHPV1m-RB"
+    );
+  }, []);
+
+  const onFrameContainerClick5 = useCallback(() => {
+    window.open(
+      "https://drive.google.com/file/d/1iLm81RWiM21qfMiwjgnJmWdgYaCld4uM/view?usp=sharing"
+    );
+  }, []);
+
   return (
     <div
-      className={`self-stretch flex flex-row items-center justify-start py-0 px-2.5 gap-[30px] text-center text-9xl text-black font-nunito ${className}`}
+      className={`self-stretch flex flex-row flex-wrap items-center justify-center py-[30px] px-[50px] gap-[30px] text-center text-lg text-gray-100 font-nunito ${className}`}
     >
-      <div className="w-[50px] rounded-6xl bg-gainsboro-200 box-border h-[50px] flex flex-col items-center justify-center border-[1px] border-solid border-black lg:w-[45px] lg:h-[45px] md:w-10 md:h-10 sm:w-[30px] sm:h-[30px]">
-        <div className="self-stretch relative font-medium flex items-center justify-center h-[40.4px] shrink-0 lg:text-6xl md:text-3xl sm:text-lgi">
-          {prop}
+      <div
+        className="rounded-lg bg-whitesmoke flex flex-row items-center justify-center py-1.5 px-[15px] cursor-pointer lg:pl-[15px] lg:box-border md:py-[5px] md:px-2.5 md:box-border sm:py-1 sm:px-2 sm:box-border"
+        onClick={onFrameContainerClick}
+      >
+        <div className="relative tracking-[0.1em] font-medium lg:text-base md:text-base sm:text-xs MoTab:text-lg">
+          System Design
         </div>
       </div>
-      <div className="flex-1 flex flex-col items-start justify-center text-left text-gray-100">
-        <div className="self-stretch relative lg:text-6xl md:text-3xl sm:text-lgi">
-          <span className="font-semibold">{headOfDesignAndCoreMember}</span>
-          <span className="text-gray-300">{may2022April2023}</span>
+      <div
+        className="rounded-lg bg-whitesmoke flex flex-row items-center justify-center py-1.5 px-[15px] cursor-pointer lg:pl-[15px] lg:box-border md:py-[5px] md:px-2.5 md:box-border sm:py-1 sm:px-2 sm:box-border"
+        onClick={onFrameContainerClick1}
+      >
+        <div className="relative tracking-[0.1em] font-medium lg:text-base md:text-base sm:text-xs MoTab:text-lg">
+          Machine Learning
         </div>
-        <div className="self-stretch relative text-3xl font-medium lg:text-2xl md:text-lg sm:text-mini">
-          {googleDeveloperStudentsCl}
+      </div>
+      <div
+        className="rounded-lg bg-whitesmoke flex flex-row items-center justify-center py-1.5 px-[15px] cursor-pointer lg:pl-[15px] lg:box-border md:py-[5px] md:px-2.5 md:box-border sm:py-1 sm:px-2 sm:box-border"
+        onClick={onFrameContainerClick2}
+      >
+        <div className="relative tracking-[0.1em] font-medium lg:text-base md:text-base sm:text-xs MoTab:text-lg">
+          Bitcoin Technology
+        </div>
+      </div>
+      <div
+        className="rounded-lg bg-whitesmoke flex flex-row items-center justify-center py-1.5 px-[15px] cursor-pointer lg:pl-[15px] lg:box-border md:py-[5px] md:px-2.5 md:box-border sm:py-1 sm:px-2 sm:box-border"
+        onClick={onFrameContainerClick3}
+      >
+        <div className="relative tracking-[0.1em] font-medium lg:text-base md:text-base sm:text-xs MoTab:text-lg">
+          Product Design
+        </div>
+      </div>
+      <div
+        className="rounded-lg bg-whitesmoke flex flex-row items-center justify-center py-1.5 px-[15px] cursor-pointer lg:pl-[15px] lg:box-border md:py-[5px] md:px-2.5 md:box-border sm:py-1 sm:px-2 sm:box-border"
+        onClick={onFrameContainerClick4}
+      >
+        <div className="relative tracking-[0.1em] font-medium lg:text-base md:text-base sm:text-xs MoTab:text-lg">
+          Database Management System
+        </div>
+      </div>
+      <div
+        className="rounded-lg bg-whitesmoke flex flex-row items-center justify-center py-1.5 px-[15px] cursor-pointer lg:pl-[15px] lg:box-border md:py-[5px] md:px-2.5 md:box-border sm:py-1 sm:px-2 sm:box-border"
+        onClick={onFrameContainerClick5}
+      >
+        <div className="relative tracking-[0.1em] font-medium lg:text-base md:text-base sm:text-xs MoTab:text-lg">
+          Object Oriented Programming
         </div>
       </div>
     </div>

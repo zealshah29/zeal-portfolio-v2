@@ -461,27 +461,84 @@ const Work: FunctionComponent = () => {
             </div>
           </div>
           <b className="self-stretch relative tracking-[0.02em] leading-[50px] lg:text-11xl md:text-6xl sm:text-xl sm:leading-[25px]">
+            RELEVANT COURSEWORK
+          </b>
+          <b className="self-stretch relative text-11xl tracking-[0.02em] leading-[40px] lg:text-6xl md:text-xl sm:text-mid sm:leading-[25px]">
+            COLLEGE COURSEWORK
+          </b>
+          <div className="self-stretch flex flex-row flex-wrap items-center justify-center py-[30px] px-[50px] gap-[30px] text-lg text-gray-100 font-nunito">
+            <div className="rounded-lg bg-whitesmoke flex flex-row items-center justify-center py-1.5 px-[15px] lg:pl-[15px] lg:box-border md:py-[5px] md:px-2.5 md:box-border sm:py-1 sm:px-2 sm:box-border">
+              <div className="relative tracking-[0.1em] font-medium lg:text-base md:text-base sm:text-xs MoTab:text-lg">
+                Processor Architecture
+              </div>
+            </div>
+            <div className="rounded-lg bg-whitesmoke flex flex-row items-center justify-center py-1.5 px-[15px] lg:pl-[15px] lg:box-border md:py-[5px] md:px-2.5 md:box-border sm:py-1 sm:px-2 sm:box-border">
+              <div className="relative tracking-[0.1em] font-medium lg:text-base md:text-base sm:text-xs MoTab:text-lg">
+                Data Structures and Algorithms
+              </div>
+            </div>
+            <div className="rounded-lg bg-whitesmoke flex flex-row items-center justify-center py-1.5 px-[15px] lg:pl-[15px] lg:box-border md:py-[5px] md:px-2.5 md:box-border sm:py-1 sm:px-2 sm:box-border">
+              <div className="relative tracking-[0.1em] font-medium lg:text-base md:text-base sm:text-xs MoTab:text-lg">
+                Neural Networks
+              </div>
+            </div>
+          </div>
+          <b className="self-stretch relative text-11xl tracking-[0.02em] leading-[40px] lg:text-6xl md:text-xl sm:text-mid sm:leading-[25px]">
+            ONLINE COURSES
+          </b>
+          <Clubs />
+          <b className="self-stretch relative tracking-[0.02em] leading-[50px] lg:text-11xl md:text-6xl sm:text-xl sm:leading-[25px]">
             COLLEGE CLUBS AND LEADERSHIP
           </b>
-          <div className="self-stretch flex flex-col items-start justify-center p-5 gap-[59px] sm:gap-[30px] sm:pt-0 sm:pb-0 sm:box-border">
-            <Clubs
-              prop="1"
-              headOfDesignAndCoreMember="Head of Design and Core Member | "
-              may2022April2023="(May 2022 - April 2023)"
-              googleDeveloperStudentsCl="Google Developer Students Club (GDSC), SVNIT Surat"
-            />
-            <Clubs
-              prop="2"
-              headOfDesignAndCoreMember="Head | "
-              may2022April2023="(May 2022 - April 2023)"
-              googleDeveloperStudentsCl="CHRD Design Group"
-            />
-            <Clubs
-              prop="3"
-              headOfDesignAndCoreMember="Executive | "
-              may2022April2023="(May 2021 - April 2022)"
-              googleDeveloperStudentsCl="Association for Computing Machinery (ACM), SVNIT Surat"
-            />
+          <div className="self-stretch flex flex-col items-center justify-center py-5 px-[200px] gap-[59px] text-9xl text-black font-nunito md:pl-[100px] md:pr-[100px] md:box-border sm:gap-[30px] sm:py-0 sm:px-[50px] sm:box-border MoTab:pl-5 MoTab:pr-5 MoTab:box-border">
+            <div className="self-stretch flex flex-row items-center justify-start py-0 px-2.5 gap-[30px]">
+              <div className="w-[50px] rounded-6xl bg-gainsboro-200 box-border h-[50px] flex flex-col items-center justify-center border-[1px] border-solid border-black lg:w-[45px] lg:h-[45px] md:w-10 md:h-10 sm:w-[30px] sm:h-[30px]">
+                <div className="self-stretch relative font-medium flex items-center justify-center h-[40.4px] shrink-0 lg:text-6xl md:text-3xl sm:text-lgi">
+                  1
+                </div>
+              </div>
+              <div className="flex-1 flex flex-col items-start justify-center text-left text-gray-100">
+                <div className="self-stretch relative lg:text-6xl md:text-3xl sm:text-lgi">
+                  <span className="font-semibold">{`Head of Design and Core Member | `}</span>
+                  <span className="text-gray-300">(May 2022 - April 2023)</span>
+                </div>
+                <div className="self-stretch relative text-3xl font-medium lg:text-2xl md:text-lg sm:text-mini">
+                  Google Developer Students Club (GDSC), SVNIT Surat
+                </div>
+              </div>
+            </div>
+            <div className="self-stretch flex flex-row items-center justify-start py-0 px-2.5 gap-[30px]">
+              <div className="w-[50px] rounded-6xl bg-gainsboro-200 box-border h-[50px] flex flex-col items-center justify-center border-[1px] border-solid border-black lg:w-[45px] lg:h-[45px] md:w-10 md:h-10 sm:w-[30px] sm:h-[30px]">
+                <div className="self-stretch relative font-medium flex items-center justify-center h-[40.4px] shrink-0 lg:text-6xl md:text-3xl sm:text-lgi">
+                  2
+                </div>
+              </div>
+              <div className="flex-1 flex flex-col items-start justify-center text-left text-gray-100">
+                <div className="self-stretch relative lg:text-6xl md:text-3xl sm:text-lgi">
+                  <span className="font-semibold">{`Head | `}</span>
+                  <span className="text-gray-300">(May 2022 - April 2023)</span>
+                </div>
+                <div className="self-stretch relative text-3xl font-medium lg:text-2xl md:text-lg sm:text-mini">
+                  CHRD Design Group
+                </div>
+              </div>
+            </div>
+            <div className="self-stretch flex flex-row items-center justify-start py-0 px-2.5 gap-[30px]">
+              <div className="w-[50px] rounded-6xl bg-gainsboro-200 box-border h-[50px] flex flex-col items-center justify-center border-[1px] border-solid border-black lg:w-[45px] lg:h-[45px] md:w-10 md:h-10 sm:w-[30px] sm:h-[30px]">
+                <div className="self-stretch relative font-medium flex items-center justify-center h-[40.4px] shrink-0 lg:text-6xl md:text-3xl sm:text-lgi">
+                  3
+                </div>
+              </div>
+              <div className="flex-1 flex flex-col items-start justify-center text-left text-gray-100">
+                <div className="self-stretch relative lg:text-6xl md:text-3xl sm:text-lgi">
+                  <span className="font-semibold">{`Executive | `}</span>
+                  <span className="text-gray-300">(May 2021 - April 2022)</span>
+                </div>
+                <div className="self-stretch relative text-3xl font-medium lg:text-2xl md:text-lg sm:text-mini">
+                  Association for Computing Machinery (ACM), SVNIT Surat
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
