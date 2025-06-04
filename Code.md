@@ -1,3 +1,4 @@
+```
 // Project Structure Overview
 
 // src/theme.js
@@ -327,7 +328,7 @@ const FindingsTable = ({ filterType }) => {
 };
 
 export default FindingsTable;
-
+```
 
 ✅ Your dashboard has been updated with the new behavior:
 
