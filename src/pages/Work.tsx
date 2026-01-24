@@ -26,7 +26,7 @@ const Work: FunctionComponent = () => {
 
   const onRESUMETextClick = useCallback(() => {
     window.open(
-      "https://drive.google.com/file/d/1QKfTg4IxINo5708_-KW1kGMgXLrsZtfZ/view?usp=sharing"
+      "https://drive.google.com/file/d/10mhFlizrg0A4noi5ZEh7_EhJ4scDun24/view?usp=drive_link"
     );
   }, []);
 
