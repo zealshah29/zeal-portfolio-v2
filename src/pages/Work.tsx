@@ -26,7 +26,7 @@ const Work: FunctionComponent = () => {
 
   const onRESUMETextClick = useCallback(() => {
     window.open(
-      "https://drive.google.com/file/d/10mhFlizrg0A4noi5ZEh7_EhJ4scDun24/view?usp=drive_link"
+      "https://drive.google.com/file/d/1QvJ2YdJRTTw544dWEMj991MnelbUR4tz/view?usp=drive_link"
     );
   }, []);
 
@@ -125,7 +125,93 @@ const Work: FunctionComponent = () => {
           <b className="self-stretch relative tracking-[0.02em] leading-[50px] lg:text-11xl md:text-6xl sm:text-xl sm:leading-[10px]">
             EXPERIENCE
           </b>
-          <div className="self-stretch flex flex-row flex-wrap items-center justify-start py-10 px-[30px] gap-[20px] text-left text-lg text-black font-nunito">
+          <div className="self-stretch grid grid-cols-2 py-10 px-[30px] gap-[20px] text-left text-lg text-black font-nunito">
+
+            {/* Barclays Role 1 */}
+            <div className="flex-1 shadow-[0px_2px_25px_rgba(0,_0,_0,_0.05)] bg-white flex flex-col items-start justify-center py-[30px] px-10 gap-[20px] border-[0.1px] border-solid border-gray-400 lg:w-[550px] md:w-[450px] sm:w-[300px]">
+              <div className="self-stretch relative text-sm tracking-[0.1em] text-gray-500">
+                Jan, 2026 - Present
+              </div>
+
+              <b className="self-stretch relative text-5xl tracking-[0.1em] leading-[30px] font-nunito-sans">
+                Software Engineer | Barclays
+              </b>
+
+              <div className="self-stretch relative tracking-[0.1em] leading-[20px]">
+                Working in the Markets Post Trade Reference Data team to productionize
+                internal automation platforms. Built a Python-based automation system with
+                configurable PostgreSQL-driven design and consolidated 191 Autosys jobs
+                into a single job to reduce operational overhead.
+              </div>
+
+              <div className="self-stretch flex flex-row flex-wrap items-center justify-start gap-[10px] text-center text-dodgerblue lg:gap-[10px] md:gap-[8px] sm:gap-[5px]">
+                {["Python","PostgreSQL","Linux","Autosys","SQL"].map((tech)=>(
+                  <div key={tech} className="rounded-lg bg-gray-700 flex flex-row items-center justify-center py-1.5 px-[15px] border-[1px] border-solid border-dodgerblue lg:pl-[15px] lg:box-border md:py-[5px] md:px-2.5 md:box-border sm:py-1 sm:px-2 sm:box-border">
+                    <div className="relative tracking-[0.1em] lg:text-base md:text-base sm:text-xs MoTab:text-lg">
+                      {tech}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+
+            {/* Barclays Role 2 */}
+            <div className="flex-1 shadow-[0px_2px_25px_rgba(0,_0,_0,_0.05)] bg-white flex flex-col items-start justify-center py-[30px] px-10 gap-[20px] border-[0.1px] border-solid border-gray-400 lg:w-[550px] md:w-[450px] sm:w-[300px]">
+              <div className="self-stretch relative text-sm tracking-[0.1em] text-gray-500">
+                May, 2025 - Jan, 2026
+              </div>
+
+              <b className="self-stretch relative text-5xl tracking-[0.1em] leading-[30px] font-nunito-sans">
+                Software Engineer | Barclays
+              </b>
+
+              <div className="self-stretch relative tracking-[0.1em] leading-[20px]">
+                Worked in the CTO Innovations Engineering team contributing to bank-wide
+                Agentic AI initiatives. Designed and developed the complete frontend of AI
+                applications including a Customer Care Assistant and C4 Diagram Generator,
+                building scalable React interfaces and integrating backend APIs.
+              </div>
+
+              <div className="self-stretch flex flex-row flex-wrap items-center justify-start gap-[10px] text-center text-dodgerblue lg:gap-[10px] md:gap-[8px] sm:gap-[5px]">
+                {["React","TypeScript","Redux","Figma","Jest","REST APIs","GitLab CI/CD"].map((tech)=>(
+                  <div key={tech} className="rounded-lg bg-gray-700 flex flex-row items-center justify-center py-1.5 px-[15px] border-[1px] border-solid border-dodgerblue lg:pl-[15px] lg:box-border md:py-[5px] md:px-2.5 md:box-border sm:py-1 sm:px-2 sm:box-border">
+                    <div className="relative tracking-[0.1em] lg:text-base md:text-base sm:text-xs MoTab:text-lg">
+                      {tech}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+
+            {/* Barclays Role 3 */}
+            <div className="flex-1 shadow-[0px_2px_25px_rgba(0,_0,_0,_0.05)] bg-white flex flex-col items-start justify-center py-[30px] px-10 gap-[20px] border-[0.1px] border-solid border-gray-400 lg:w-[550px] md:w-[450px] sm:w-[300px]">
+              <div className="self-stretch relative text-sm tracking-[0.1em] text-gray-500">
+                Aug, 2024 - Apr, 2025
+              </div>
+
+              <b className="self-stretch relative text-5xl tracking-[0.1em] leading-[30px] font-nunito-sans">
+                Software Engineer | Barclays
+              </b>
+
+              <div className="self-stretch relative tracking-[0.1em] leading-[20px]">
+                Worked on automation and data reconciliation solutions within the Markets
+                Post Trade AWS team. Automated reconciliation across six years of audit
+                data and optimized Autosys pipelines, improving efficiency by 58% while
+                maintaining production stability and full test coverage.
+              </div>
+
+              <div className="self-stretch flex flex-row flex-wrap items-center justify-start gap-[10px] text-center text-dodgerblue lg:gap-[10px] md:gap-[8px] sm:gap-[5px]">
+                {["Python","PostgreSQL","AWS","Autosys","Linux","Pytest"].map((tech)=>(
+                  <div key={tech} className="rounded-lg bg-gray-700 flex flex-row items-center justify-center py-1.5 px-[15px] border-[1px] border-solid border-dodgerblue lg:pl-[15px] lg:box-border md:py-[5px] md:px-2.5 md:box-border sm:py-1 sm:px-2 sm:box-border">
+                    <div className="relative tracking-[0.1em] lg:text-base md:text-base sm:text-xs MoTab:text-lg">
+                      {tech}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
             <div className="flex-1 shadow-[0px_2px_25px_rgba(0,_0,_0,_0.05)] bg-white flex flex-col items-start justify-center py-[30px] px-10 gap-[20px] border-[0.1px] border-solid border-gray-400 lg:w-[550px] md:w-[450px] sm:w-[300px]">
               <div className="self-stretch relative text-sm tracking-[0.1em] text-gray-500 flex items-center h-[52px] shrink-0 lg:text-smi md:text-2xs sm:text-3xs">
                 May, 2023 - July, 2023
