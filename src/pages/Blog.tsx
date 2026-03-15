@@ -66,7 +66,7 @@ const Blog: FunctionComponent = () => {
           <img
             className="h-9 w-9 relative overflow-hidden shrink-0 hidden cursor-pointer md:hidden sm:flex MoTab:flex"
             alt=""
-            src="/menu.svg"
+            src={`${import.meta.env.BASE_URL}menu.svg`}
             onClick={openAndroidMenuBlog}
           />
         </header>
@@ -84,13 +84,13 @@ const Blog: FunctionComponent = () => {
             <img
               className="w-[25px] relative h-[25px] object-cover cursor-pointer"
               alt=""
-              src="/linkedin@2x.png"
+              src={`${import.meta.env.BASE_URL}linkedin@2x.png`}
               onClick={onLinkedInIconClick}
             />
             <img
               className="w-[25px] relative h-[25px] object-cover cursor-pointer"
               alt=""
-              src="/github@2x.png"
+              src={`${import.meta.env.BASE_URL}github@2x.png`}
               onClick={onGitHubIconClick}
             />
           </div>
@@ -108,7 +108,7 @@ const Blog: FunctionComponent = () => {
                 <img
                   className="self-stretch relative rounded-xl max-w-full overflow-hidden h-[167.5px] shrink-0 object-cover"
                   alt=""
-                  src="/rectangle-61@2x.png"
+                  src={`${import.meta.env.BASE_URL}rectangle-61@2x.png`}
                 />
                 <div className="self-stretch flex flex-col items-start justify-start p-2.5 gap-[5px]">
                   <b className="self-stretch relative lg:text-6xl md:text-xl sm:text-mini MoTab:text-xl">
@@ -126,7 +126,7 @@ const Blog: FunctionComponent = () => {
                 <img
                   className="self-stretch relative rounded-xl max-w-full overflow-hidden h-[167.5px] shrink-0 object-cover"
                   alt=""
-                  src="/rectangle-62@2x.png"
+                  src={`${import.meta.env.BASE_URL}rectangle-62@2x.png`}
                 />
                 <div className="self-stretch flex flex-col items-start justify-start p-2.5 gap-[5px]">
                   <b className="self-stretch relative lg:text-6xl md:text-xl sm:text-mini MoTab:text-xl">

@@ -73,7 +73,7 @@ const Home: FunctionComponent = () => {
             <img
               className="absolute h-3/6 w-9/12 top-[25%] right-[12.5%] bottom-[25%] left-[12.5%] max-w-full overflow-hidden max-h-full"
               alt=""
-              src="/vector.svg"
+              src={`${import.meta.env.BASE_URL}vector.svg`}
             />
           </nav>
         </header>
@@ -91,13 +91,13 @@ const Home: FunctionComponent = () => {
             <img
               className="w-[25px] relative h-[25px] object-cover cursor-pointer"
               alt=""
-              src="/linkedin@2x.png"
+              src={`${import.meta.env.BASE_URL}linkedin@2x.png`}
               onClick={onLinkedInIconClick}
             />
             <img
               className="w-[25px] relative h-[25px] object-cover cursor-pointer"
               alt=""
-              src="/github@2x.png"
+              src={`${import.meta.env.BASE_URL}github@2x.png`}
               onClick={onGitHubIconClick}
             />
           </div>
@@ -143,7 +143,7 @@ const Home: FunctionComponent = () => {
           <img
             className="w-[319px] relative rounded-lg h-[313px] object-cover lg:w-[300px] lg:h-[300px] md:w-[250px] md:h-[250px] sm:w-60 sm:h-60 MoTab:w-[250px] MoTab:h-[250px]"
             alt=""
-            src="/zz5lqevsmy@2x.png"
+            src={`${import.meta.env.BASE_URL}zz5lqevsmy@2x.png`}
           />
         </section>
         <div className="self-stretch bg-white overflow-hidden flex flex-row items-center justify-center py-[30px] px-[50px] text-center text-xl text-gray-600 border-t-[0.3px] border-solid border-gray-200 sm:pt-[30px] sm:pb-[30px] sm:box-border">

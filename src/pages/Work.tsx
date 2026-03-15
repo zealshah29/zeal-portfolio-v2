@@ -89,7 +89,7 @@ const Work: FunctionComponent = () => {
           <img
             className="h-9 w-9 relative overflow-hidden shrink-0 hidden cursor-pointer MoTab:flex"
             alt=""
-            src="/menu.svg"
+            src={`${import.meta.env.BASE_URL}menu.svg`}
             onClick={openAndroidMenuWork}
           />
         </div>
@@ -107,13 +107,13 @@ const Work: FunctionComponent = () => {
             <img
               className="w-[25px] relative h-[25px] object-cover cursor-pointer"
               alt=""
-              src="/linkedin@2x.png"
+              src={`${import.meta.env.BASE_URL}linkedin@2x.png`}
               onClick={onLinkedInIconClick}
             />
             <img
               className="w-[25px] relative h-[25px] object-cover cursor-pointer"
               alt=""
-              src="/github@2x.png"
+              src={`${import.meta.env.BASE_URL}github@2x.png`}
               onClick={onGitHubIconClick}
             />
           </div>
@@ -295,7 +295,7 @@ const Work: FunctionComponent = () => {
               <img
                 className="self-stretch relative rounded max-w-full overflow-hidden h-[213px] shrink-0 object-cover sm:self-stretch sm:w-auto sm:h-[100px] MoTab:self-stretch MoTab:w-auto MoTab:h-[100px]"
                 alt=""
-                src="/rectangle-8@2x.png"
+                src={`${import.meta.env.BASE_URL}rectangle-8@2x.png`}
               />
               <div className="self-stretch flex flex-col items-start justify-start gap-[17px]">
                 <b className="self-stretch relative lg:text-8xl md:text-6xl sm:text-2xl">
@@ -329,7 +329,7 @@ const Work: FunctionComponent = () => {
               <img
                 className="self-stretch relative rounded max-w-full overflow-hidden h-[213px] shrink-0 object-cover sm:self-stretch sm:w-auto sm:h-[100px] MoTab:self-stretch MoTab:w-auto MoTab:h-[100px]"
                 alt=""
-                src="/rectangle-81@2x.png"
+                src={`${import.meta.env.BASE_URL}rectangle-81@2x.png`}
               />
               <div className="w-[665px] flex flex-col items-start justify-start gap-[17px] MoTab:self-stretch MoTab:w-auto">
                 <b className="self-stretch relative lg:text-8xl md:text-6xl sm:text-2xl">
@@ -368,7 +368,7 @@ const Work: FunctionComponent = () => {
               <img
                 className="self-stretch relative max-w-full overflow-hidden h-[213px] shrink-0 object-cover sm:self-stretch sm:w-auto sm:h-[100px] MoTab:self-stretch MoTab:w-auto MoTab:h-[100px]"
                 alt=""
-                src="/rectangle-82@2x.png"
+                src={`${import.meta.env.BASE_URL}rectangle-82@2x.png`}
               />
               <div className="w-[665px] flex flex-col items-start justify-start gap-[17px] MoTab:self-stretch MoTab:w-auto">
                 <b className="self-stretch relative lg:text-8xl md:text-6xl sm:text-2xl">
@@ -401,7 +401,7 @@ const Work: FunctionComponent = () => {
               <img
                 className="self-stretch relative max-w-full overflow-hidden h-[213px] shrink-0 object-cover sm:self-stretch sm:w-auto sm:h-[100px] MoTab:self-stretch MoTab:w-auto MoTab:h-[100px]"
                 alt=""
-                src="/rectangle-83@2x.png"
+                src={`${import.meta.env.BASE_URL}rectangle-83@2x.png`}
               />
               <div className="w-[665px] flex flex-col items-start justify-start gap-[17px] MoTab:self-stretch MoTab:w-auto">
                 <b className="self-stretch relative lg:text-8xl md:text-6xl sm:text-2xl">
@@ -438,7 +438,7 @@ const Work: FunctionComponent = () => {
               <img
                 className="self-stretch relative max-w-full overflow-hidden h-[213px] shrink-0 object-cover sm:self-stretch sm:w-auto sm:h-[100px] MoTab:self-stretch MoTab:w-auto MoTab:h-[100px]"
                 alt=""
-                src="/rectangle-84@2x.png"
+                src={`${import.meta.env.BASE_URL}rectangle-84@2x.png`}
               />
               <div className="w-[665px] flex flex-col items-start justify-start gap-[17px] MoTab:self-stretch MoTab:w-auto">
                 <b className="self-stretch relative lg:text-8xl md:text-6xl sm:text-2xl">
@@ -471,7 +471,7 @@ const Work: FunctionComponent = () => {
               <img
                 className="self-stretch relative max-w-full overflow-hidden h-[213px] shrink-0 object-cover sm:self-stretch sm:w-auto sm:h-[100px] MoTab:self-stretch MoTab:w-auto MoTab:h-[100px]"
                 alt=""
-                src="/rectangle-85@2x.png"
+                src={`${import.meta.env.BASE_URL}rectangle-85@2x.png`}
               />
               <div className="w-[665px] flex flex-col items-start justify-start gap-[17px] MoTab:self-stretch MoTab:w-auto">
                 <b className="self-stretch relative lg:text-8xl md:text-6xl sm:text-2xl">
@@ -512,7 +512,7 @@ const Work: FunctionComponent = () => {
               <img
                 className="w-[640px] relative rounded-10xs h-[448.9px] object-cover lg:w-[400px] lg:h-[300px] md:w-[360px] md:h-[270px] sm:w-[280px] sm:h-[210px]"
                 alt=""
-                src="/image-1@2x.png"
+                src={`${import.meta.env.BASE_URL}image-1@2x.png`}
               />
               <div className="w-[601px] flex flex-col items-start justify-start p-[5px] box-border gap-[22px] lg:w-[400px] md:w-[350px] sm:w-[270px]">
                 <b className="self-stretch relative lg:text-8xl md:text-5xl sm:text-2xl">
@@ -532,7 +532,7 @@ const Work: FunctionComponent = () => {
               <img
                 className="w-[640px] relative rounded-10xs h-[448.9px] object-cover lg:w-[400px] lg:h-[300px] md:w-[360px] md:h-[270px] sm:w-[280px] sm:h-[210px]"
                 alt=""
-                src="/image-11@2x.png"
+                src={`${import.meta.env.BASE_URL}image-11@2x.png`}
               />
               <div className="w-[601px] flex flex-col items-start justify-start p-[5px] box-border gap-[22px] lg:w-[400px] md:w-[350px] sm:w-[270px]">
                 <b className="self-stretch relative lg:text-8xl md:text-5xl sm:text-2xl">
