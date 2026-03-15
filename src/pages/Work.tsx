@@ -138,8 +138,8 @@ const Work: FunctionComponent = () => {
               </b>
 
               <div className="self-stretch relative tracking-[0.1em] leading-[20px]">
-                Working in the Markets Post Trade Reference Data team to productionize
-                internal automation platforms. Built a Python-based automation system with
+                Working in the Instruments Reference Data team to productionize
+                internal automation component. Built a Python-based automation system with
                 configurable PostgreSQL-driven design and consolidated 191 Autosys jobs
                 into a single job to reduce operational overhead.
               </div>
