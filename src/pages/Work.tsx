@@ -125,9 +125,10 @@ const Work: FunctionComponent = () => {
           <b className="self-stretch relative tracking-[0.02em] leading-[50px] lg:text-11xl md:text-6xl sm:text-xl sm:leading-[10px]">
             EXPERIENCE
           </b>
-          <div className="self-stretch grid grid-cols-1 md:grid-cols-2 py-10 px-[30px] gap-[20px] text-left text-lg text-black font-nunito">
+          <div className="self-stretch grid grid-cols-1 py-10 px-4 sm:px-6 md:px-10 gap-[20px] text-left text-lg text-black font-nunito">
+
             {/* Barclays Role 1 */}
-            <div className="flex-1 shadow-[0px_2px_25px_rgba(0,_0,_0,_0.05)] bg-white flex flex-col items-start justify-center py-[30px] px-10 gap-[20px] border-[0.1px] border-solid border-gray-400 lg:w-[550px] md:w-[450px] sm:w-[300px]">
+            <div className="w-full max-w-4xl justify-self-center shadow-[0px_2px_25px_rgba(0,_0,_0,_0.05)] bg-white flex flex-col items-start justify-center py-[30px] px-6 sm:px-8 md:px-10 gap-[20px] border-[0.1px] border-solid border-gray-400">
               <div className="self-stretch relative text-sm tracking-[0.1em] text-gray-500">
                 Jan, 2026 - Present
               </div>
@@ -156,7 +157,7 @@ const Work: FunctionComponent = () => {
 
 
             {/* Barclays Role 2 */}
-            <div className="flex-1 shadow-[0px_2px_25px_rgba(0,_0,_0,_0.05)] bg-white flex flex-col items-start justify-center py-[30px] px-10 gap-[20px] border-[0.1px] border-solid border-gray-400 lg:w-[550px] md:w-[450px] sm:w-[300px]">
+            <div className="w-full max-w-4xl justify-self-center shadow-[0px_2px_25px_rgba(0,_0,_0,_0.05)] bg-white flex flex-col items-start justify-center py-[30px] px-6 sm:px-8 md:px-10 gap-[20px] border-[0.1px] border-solid border-gray-400">
               <div className="self-stretch relative text-sm tracking-[0.1em] text-gray-500">
                 May, 2025 - Jan, 2026
               </div>
@@ -185,7 +186,7 @@ const Work: FunctionComponent = () => {
 
 
             {/* Barclays Role 3 */}
-            <div className="flex-1 shadow-[0px_2px_25px_rgba(0,_0,_0,_0.05)] bg-white flex flex-col items-start justify-center py-[30px] px-10 gap-[20px] border-[0.1px] border-solid border-gray-400 lg:w-[550px] md:w-[450px] sm:w-[300px]">
+            <div className="w-full max-w-4xl justify-self-center shadow-[0px_2px_25px_rgba(0,_0,_0,_0.05)] bg-white flex flex-col items-start justify-center py-[30px] px-6 sm:px-8 md:px-10 gap-[20px] border-[0.1px] border-solid border-gray-400">
               <div className="self-stretch relative text-sm tracking-[0.1em] text-gray-500">
                 Aug, 2024 - Apr, 2025
               </div>
@@ -211,7 +212,7 @@ const Work: FunctionComponent = () => {
                 ))}
               </div>
             </div>
-            <div className="flex-1 shadow-[0px_2px_25px_rgba(0,_0,_0,_0.05)] bg-white flex flex-col items-start justify-center py-[30px] px-10 gap-[20px] border-[0.1px] border-solid border-gray-400 lg:w-[550px] md:w-[450px] sm:w-[300px]">
+            <div className="w-full max-w-4xl justify-self-center shadow-[0px_2px_25px_rgba(0,_0,_0,_0.05)] bg-white flex flex-col items-start justify-center py-[30px] px-6 sm:px-8 md:px-10 gap-[20px] border-[0.1px] border-solid border-gray-400">
               <div className="self-stretch relative text-sm tracking-[0.1em] text-gray-500 flex items-center h-[52px] shrink-0 lg:text-smi md:text-2xs sm:text-3xs">
                 May, 2023 - July, 2023
               </div>
@@ -246,7 +247,7 @@ const Work: FunctionComponent = () => {
                 </div>
               </div>
             </div>
-            <div className="flex-1 shadow-[0px_2px_25px_rgba(0,_0,_0,_0.05)] bg-white flex flex-col items-start justify-center py-[30px] px-10 gap-[20px] border-[0.1px] border-solid border-gray-400 lg:w-[550px] md:w-[450px] sm:w-[300px]">
+            <div className="w-full max-w-4xl justify-self-center shadow-[0px_2px_25px_rgba(0,_0,_0,_0.05)] bg-white flex flex-col items-start justify-center py-[30px] px-6 sm:px-8 md:px-10 gap-[20px] border-[0.1px] border-solid border-gray-400">
               <div className="self-stretch relative text-sm tracking-[0.1em] text-gray-500 flex items-center h-[52px] shrink-0 lg:text-smi md:text-2xs sm:text-3xs">
                 January, 2024 - May, 2024
               </div>
@@ -503,7 +504,7 @@ const Work: FunctionComponent = () => {
           <b className="self-stretch relative tracking-[0.02em] leading-[50px] lg:text-11xl md:text-6xl sm:text-xl sm:leading-[10px]">
             ACHIEVEMENTS
           </b>
-          <div className="self-stretch flex flex-row flex-wrap items-center justify-center py-10 px-[30px] gap-[20px_50px] text-left text-11xl text-gray-100">
+          <div className="self-stretch flex flex-row flex-wrap items-center justify-center py-10 px-4 gap-[20px_50px] text-left text-11xl text-gray-100">
             <div
               className="rounded-10xs bg-white flex flex-col items-center justify-center py-[21px] px-5 gap-[40px] cursor-pointer border-[0.5px] border-solid border-gray-200"
               onClick={onFrameContainerClick6}
