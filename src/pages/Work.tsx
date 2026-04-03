@@ -125,8 +125,7 @@ const Work: FunctionComponent = () => {
           <b className="self-stretch relative tracking-[0.02em] leading-[50px] lg:text-11xl md:text-6xl sm:text-xl sm:leading-[10px]">
             EXPERIENCE
           </b>
-          <div className="self-stretch grid grid-cols-2 py-10 px-[30px] gap-[20px] text-left text-lg text-black font-nunito">
-
+          <div className="self-stretch grid grid-cols-1 md:grid-cols-2 py-10 px-[30px] gap-[20px] text-left text-lg text-black font-nunito">
             {/* Barclays Role 1 */}
             <div className="flex-1 shadow-[0px_2px_25px_rgba(0,_0,_0,_0.05)] bg-white flex flex-col items-start justify-center py-[30px] px-10 gap-[20px] border-[0.1px] border-solid border-gray-400 lg:w-[550px] md:w-[450px] sm:w-[300px]">
               <div className="self-stretch relative text-sm tracking-[0.1em] text-gray-500">
