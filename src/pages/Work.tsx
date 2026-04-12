@@ -129,15 +129,15 @@ const Work: FunctionComponent = () => {
 
             {/* Barclays Role 1 */}
             <div className="w-full max-w-4xl justify-self-center shadow-[0px_2px_25px_rgba(0,_0,_0,_0.05)] bg-white flex flex-col items-start justify-center py-[30px] px-6 sm:px-8 md:px-10 gap-[20px] border-[0.1px] border-solid border-gray-400">
-              <div className="self-stretch relative text-sm tracking-[0.1em] text-gray-500">
+              <div className="self-stretch relative text-sm tracking-[0.1em] text-gray-500 flex items-center h-[52px] shrink-0 lg:text-smi md:text-2xs sm:text-3xs">
                 Jan, 2026 - Present
               </div>
 
-              <b className="self-stretch relative text-5xl tracking-[0.1em] leading-[30px] font-nunito-sans">
+              <b className="self-stretch relative text-5xl tracking-[0.1em] leading-[30px] font-nunito-sans lg:text-3xl md:text-xl sm:text-lg">
                 Software Engineer | Barclays
               </b>
 
-              <div className="self-stretch relative tracking-[0.1em] leading-[20px]">
+              <div className="self-stretch relative tracking-[0.1em] leading-[20px] lg:text-mini md:text-xs">
                 Working in the Instruments Reference Data team to productionize
                 internal automation component. Built a Python-based automation system with
                 configurable PostgreSQL-driven design and consolidated 191 Autosys jobs
@@ -158,15 +158,15 @@ const Work: FunctionComponent = () => {
 
             {/* Barclays Role 2 */}
             <div className="w-full max-w-4xl justify-self-center shadow-[0px_2px_25px_rgba(0,_0,_0,_0.05)] bg-white flex flex-col items-start justify-center py-[30px] px-6 sm:px-8 md:px-10 gap-[20px] border-[0.1px] border-solid border-gray-400">
-              <div className="self-stretch relative text-sm tracking-[0.1em] text-gray-500">
+              <div className="self-stretch relative text-sm tracking-[0.1em] text-gray-500 flex items-center h-[52px] shrink-0 lg:text-smi md:text-2xs sm:text-3xs">
                 May, 2025 - Jan, 2026
               </div>
 
-              <b className="self-stretch relative text-5xl tracking-[0.1em] leading-[30px] font-nunito-sans">
+              <b className="self-stretch relative text-5xl tracking-[0.1em] leading-[30px] font-nunito-sans lg:text-3xl md:text-xl sm:text-lg">
                 Software Engineer | Barclays
               </b>
 
-              <div className="self-stretch relative tracking-[0.1em] leading-[20px]">
+              <div className="self-stretch relative tracking-[0.1em] leading-[20px] lg:text-mini md:text-xs">
                 Worked in the CTO Innovations Engineering team contributing to bank-wide
                 Agentic AI initiatives. Designed and developed the complete frontend of AI
                 applications including a Customer Care Assistant and C4 Diagram Generator,
@@ -187,15 +187,15 @@ const Work: FunctionComponent = () => {
 
             {/* Barclays Role 3 */}
             <div className="w-full max-w-4xl justify-self-center shadow-[0px_2px_25px_rgba(0,_0,_0,_0.05)] bg-white flex flex-col items-start justify-center py-[30px] px-6 sm:px-8 md:px-10 gap-[20px] border-[0.1px] border-solid border-gray-400">
-              <div className="self-stretch relative text-sm tracking-[0.1em] text-gray-500">
+              <div className="self-stretch relative text-sm tracking-[0.1em] text-gray-500 flex items-center h-[52px] shrink-0 lg:text-smi md:text-2xs sm:text-3xs">
                 Aug, 2024 - Apr, 2025
               </div>
 
-              <b className="self-stretch relative text-5xl tracking-[0.1em] leading-[30px] font-nunito-sans">
+              <b className="self-stretch relative text-5xl tracking-[0.1em] leading-[30px] font-nunito-sans lg:text-3xl md:text-xl sm:text-lg">
                 Software Engineer | Barclays
               </b>
 
-              <div className="self-stretch relative tracking-[0.1em] leading-[20px]">
+              <div className="self-stretch relative tracking-[0.1em] leading-[20px] lg:text-mini md:text-xs">
                 Worked on automation and data reconciliation solutions within the Markets
                 Post Trade AWS team. Automated reconciliation across six years of audit
                 data and optimized Autosys pipelines, improving efficiency by 58% while
