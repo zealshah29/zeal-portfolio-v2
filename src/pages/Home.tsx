@@ -23,12 +23,6 @@ const Home: FunctionComponent = () => {
     setAndroidMenuOpen(false);
   }, []);
 
-  const onRESUMETextClick = useCallback(() => {
-    window.open(
-      "https://drive.google.com/file/d/1QvJ2YdJRTTw544dWEMj991MnelbUR4tz/view?usp=drive_link"
-    );
-  }, []);
-
   const onLinkedInIconClick = useCallback(() => {
     window.open("https://www.linkedin.com/in/zeal-shah-60214b121/");
   }, []);
@@ -78,15 +72,6 @@ const Home: FunctionComponent = () => {
           </nav>
         </header>
         <div className="self-stretch h-[49px] bg-white box-border flex flex-row items-center justify-between py-3.5 px-10 border-[0.5px] border-solid border-gainsboro-300 sm:flex sm:self-stretch sm:w-auto">
-          <div className="w-[110px] relative h-[31px]">
-            <div className="absolute top-[0px] left-[0px] bg-gainsboro-200 box-border w-[110px] h-[31px] border-[1px] border-solid border-blue" />
-            <div
-              className="absolute top-[5.5px] left-[21px] tracking-[0.1em] cursor-pointer"
-              onClick={onRESUMETextClick}
-            >
-              RESUME
-            </div>
-          </div>
           <div className="flex flex-row items-center justify-start gap-[20px]">
             <img
               className="w-[25px] relative h-[25px] object-cover cursor-pointer"
